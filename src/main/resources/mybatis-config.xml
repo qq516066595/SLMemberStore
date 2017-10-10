@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE configuration
+	PUBLIC "-//mybatis.org//DTD Config 3.0//EN"
+	"http://mybatis.org/dtd/mybatis-3-config.dtd">
+<configuration>
+	<!-- 设置mybatis运行行为 -->
+	<settings>
+		<!-- 设置日志实现为log4j -->
+		<setting name="logImpl" value="LOG4J"/>
+		<!-- 设置自动映射级别为全自动 -->
+		<setting name="autoMappingBehavior" value="FULL"/>
+	</settings>
+</configuration>

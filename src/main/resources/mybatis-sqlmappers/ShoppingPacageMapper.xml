@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.accp.dao.ShoppingPacageMapper">
+  <resultMap id="BaseResultMap" type="com.accp.pojo.ShoppingPacage">
+    <id column="p_id" jdbcType="INTEGER" property="pId" />
+    <result column="s_id" jdbcType="INTEGER" property="sId" />
+    <result column="p_name" jdbcType="VARCHAR" property="pName" />
+    <result column="p_price" jdbcType="DOUBLE" property="pPrice" />
+    <result column="p_discount" jdbcType="DOUBLE" property="pDiscount" />
+    <result column="p_spCount" jdbcType="INTEGER" property="pSpCount" />
+    <result column="p_spState" jdbcType="INTEGER" property="pSpState" />
+    <result column="p_lastDate" jdbcType="DATE" property="pLastDate" />
+    <result column="p_spDesc" jdbcType="VARCHAR" property="pSpDesc" />
+    <result column="p_explan" jdbcType="VARCHAR" property="pExplan" />
+    <result column="p_type" jdbcType="VARCHAR" property="pType" />
+  </resultMap>
+  <sql id="Base_Column_List">
+    p_id, s_id, p_name, p_price, p_discount, p_spCount, p_spState, p_lastDate, p_spDesc, 
+    p_explan, p_type
+  </sql>
+  <select id="selectByPrimaryKey" parameterType="java.lang.Integer" resultMap="BaseResultMap">
+    select 
+    <include refid="Base_Column_List" />
+    from tab_shopping_pacage
+    where p_id = #{pId,jdbcType=INTEGER}
+  </select>
+  <delete id="deleteByPrimaryKey" parameterType="java.lang.Integer">
+    delete from tab_shopping_pacage
+    where p_id = #{pId,jdbcType=INTEGER}
+  </delete>
+  <insert id="insert" parameterType="com.accp.pojo.ShoppingPacage">
+    insert into tab_shopping_pacage (p_id, s_id, p_name, 
+      p_price, p_discount, p_spCount, 
+      p_spState, p_lastDate, p_spDesc, 
+      p_explan, p_type)
+    values (#{pId,jdbcType=INTEGER}, #{sId,jdbcType=INTEGER}, #{pName,jdbcType=VARCHAR}, 
+      #{pPrice,jdbcType=DOUBLE}, #{pDiscount,jdbcType=DOUBLE}, #{pSpcount,jdbcType=INTEGER}, 
+      #{pSpstate,jdbcType=INTEGER}, #{pLastdate,jdbcType=DATE}, #{pSpdesc,jdbcType=VARCHAR}, 
+      #{pExplan,jdbcType=VARCHAR}, #{pType,jdbcType=VARCHAR})
+  </insert>
+  <insert id="insertSelective" parameterType="com.accp.pojo.ShoppingPacage">
+    insert into tab_shopping_pacage
+    <trim prefix="(" suffix=")" suffixOverrides=",">
+      <if test="pId != null">
+        p_id,
+      </if>
+      <if test="sId != null">
+        s_id,
+      </if>
+      <if test="pName != null">
+        p_name,
+      </if>
+      <if test="pPrice != null">
+        p_price,
+      </if>
+      <if test="pDiscount != null">
+        p_discount,
+      </if>
+      <if test="pSpcount != null">
+        p_spCount,
+      </if>
+      <if test="pSpstate != null">
+        p_spState,
+      </if>
+      <if test="pLastdate != null">
+        p_lastDate,
+      </if>
+      <if test="pSpdesc != null">
+        p_spDesc,
+      </if>
+      <if test="pExplan != null">
+        p_explan,
+      </if>
+      <if test="pType != null">
+        p_type,
+      </if>
+    </trim>
+    <trim prefix="values (" suffix=")" suffixOverrides=",">
+      <if test="pId != null">
+        #{pId,jdbcType=INTEGER},
+      </if>
+      <if test="sId != null">
+        #{sId,jdbcType=INTEGER},
+      </if>
+      <if test="pName != null">
+        #{pName,jdbcType=VARCHAR},
+      </if>
+      <if test="pPrice != null">
+        #{pPrice,jdbcType=DOUBLE},
+      </if>
+      <if test="pDiscount != null">
+        #{pDiscount,jdbcType=DOUBLE},
+      </if>
+      <if test="pSpcount != null">
+        #{pSpcount,jdbcType=INTEGER},
+      </if>
+      <if test="pSpstate != null">
+        #{pSpstate,jdbcType=INTEGER},
+      </if>
+      <if test="pLastdate != null">
+        #{pLastdate,jdbcType=DATE},
+      </if>
+      <if test="pSpdesc != null">
+        #{pSpdesc,jdbcType=VARCHAR},
+      </if>
+      <if test="pExplan != null">
+        #{pExplan,jdbcType=VARCHAR},
+      </if>
+      <if test="pType != null">
+        #{pType,jdbcType=VARCHAR},
+      </if>
+    </trim>
+  </insert>
+  <update id="updateByPrimaryKeySelective" parameterType="com.accp.pojo.ShoppingPacage">
+    update tab_shopping_pacage
+    <set>
+      <if test="sId != null">
+        s_id = #{sId,jdbcType=INTEGER},
+      </if>
+      <if test="pName != null">
+        p_name = #{pName,jdbcType=VARCHAR},
+      </if>
+      <if test="pPrice != null">
+        p_price = #{pPrice,jdbcType=DOUBLE},
+      </if>
+      <if test="pDiscount != null">
+        p_discount = #{pDiscount,jdbcType=DOUBLE},
+      </if>
+      <if test="pSpcount != null">
+        p_spCount = #{pSpcount,jdbcType=INTEGER},
+      </if>
+      <if test="pSpstate != null">
+        p_spState = #{pSpstate,jdbcType=INTEGER},
+      </if>
+      <if test="pLastdate != null">
+        p_lastDate = #{pLastdate,jdbcType=DATE},
+      </if>
+      <if test="pSpdesc != null">
+        p_spDesc = #{pSpdesc,jdbcType=VARCHAR},
+      </if>
+      <if test="pExplan != null">
+        p_explan = #{pExplan,jdbcType=VARCHAR},
+      </if>
+      <if test="pType != null">
+        p_type = #{pType,jdbcType=VARCHAR},
+      </if>
+    </set>
+    where p_id = #{pId,jdbcType=INTEGER}
+  </update>
+  <update id="updateByPrimaryKey" parameterType="com.accp.pojo.ShoppingPacage">
+    update tab_shopping_pacage
+    set s_id = #{sId,jdbcType=INTEGER},
+      p_name = #{pName,jdbcType=VARCHAR},
+      p_price = #{pPrice,jdbcType=DOUBLE},
+      p_discount = #{pDiscount,jdbcType=DOUBLE},
+      p_spCount = #{pSpcount,jdbcType=INTEGER},
+      p_spState = #{pSpstate,jdbcType=INTEGER},
+      p_lastDate = #{pLastdate,jdbcType=DATE},
+      p_spDesc = #{pSpdesc,jdbcType=VARCHAR},
+      p_explan = #{pExplan,jdbcType=VARCHAR},
+      p_type = #{pType,jdbcType=VARCHAR}
+    where p_id = #{pId,jdbcType=INTEGER}
+  </update>
+</mapper>

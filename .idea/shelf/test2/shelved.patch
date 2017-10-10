@@ -1,0 +1,7 @@
+Index: test/test.text
+===================================================================
+--- test/test.text	(revision d420978f65addbb07ea43414262b690e1f58c1bb)
++++ test/test.text	(revision d420978f65addbb07ea43414262b690e1f58c1bb)
+@@ -1,1 +0,0 @@
+-test上传111
+\ No newline at end of file

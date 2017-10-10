@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.accp.dao.DataDictionaryMapper">
+  <resultMap id="BaseResultMap" type="com.accp.pojo.DataDictionary">
+    <result column="d_Code" jdbcType="VARCHAR" property="dCode" />
+    <result column="d_Type" jdbcType="VARCHAR" property="dType" />
+    <result column="d_name" jdbcType="VARCHAR" property="dName" />
+    <result column="d_value" jdbcType="VARCHAR" property="dValue" />
+    <result column="d_desc" jdbcType="VARCHAR" property="dDesc" />
+  </resultMap>
+  <insert id="insert" parameterType="com.accp.pojo.DataDictionary">
+    insert into tab_data_dictionary (d_Code, d_Type, d_name, 
+      d_value, d_desc)
+    values (#{dCode,jdbcType=VARCHAR}, #{dType,jdbcType=VARCHAR}, #{dName,jdbcType=VARCHAR}, 
+      #{dValue,jdbcType=VARCHAR}, #{dDesc,jdbcType=VARCHAR})
+  </insert>
+  <insert id="insertSelective" parameterType="com.accp.pojo.DataDictionary">
+    insert into tab_data_dictionary
+    <trim prefix="(" suffix=")" suffixOverrides=",">
+      <if test="dCode != null">
+        d_Code,
+      </if>
+      <if test="dType != null">
+        d_Type,
+      </if>
+      <if test="dName != null">
+        d_name,
+      </if>
+      <if test="dValue != null">
+        d_value,
+      </if>
+      <if test="dDesc != null">
+        d_desc,
+      </if>
+    </trim>
+    <trim prefix="values (" suffix=")" suffixOverrides=",">
+      <if test="dCode != null">
+        #{dCode,jdbcType=VARCHAR},
+      </if>
+      <if test="dType != null">
+        #{dType,jdbcType=VARCHAR},
+      </if>
+      <if test="dName != null">
+        #{dName,jdbcType=VARCHAR},
+      </if>
+      <if test="dValue != null">
+        #{dValue,jdbcType=VARCHAR},
+      </if>
+      <if test="dDesc != null">
+        #{dDesc,jdbcType=VARCHAR},
+      </if>
+    </trim>
+  </insert>
+</mapper>

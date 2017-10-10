@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="war" name="SLMemberStore:war">
+    <output-path>$PROJECT_DIR$/target</output-path>
+    <root id="archive" name="SLMemberStore.war">
+      <element id="artifact" artifact-name="SLMemberStore:war exploded" />
+    </root>
+  </artifact>
+</component>
