@@ -112,7 +112,7 @@
                             <td class="center ">-</td>
                             <td class="center ">U</td>
                             <td class=" ">-</td>
-                           
+
                         </tbody>
                     </table>
                 </div>

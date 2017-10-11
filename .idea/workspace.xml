@@ -25,8 +25,13 @@
       <file leaf-file-name="awardpage.jsp" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/webapp/jsp/hubangzhen/awardpage.jsp">
           <provider selected="true" editor-type-id="text-editor">
+<<<<<<< Updated upstream
             <state relative-caret-position="552">
               <caret line="85" column="22" lean-forward="false" selection-start-line="85" selection-start-column="22" selection-end-line="85" selection-end-column="22" />
+=======
+            <state relative-caret-position="376">
+              <caret line="114" column="0" lean-forward="false" selection-start-line="114" selection-start-column="0" selection-end-line="114" selection-end-column="0" />
+>>>>>>> Stashed changes
               <folding>
                 <element signature="n#style#0;n#th#0;n#tr#0;n#thead#0;n#table#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
                 <element signature="n#div#1;n#body#0;n#html#0;n#!!top" expanded="false" />
@@ -633,6 +638,7 @@
     <option name="remove_strategy" value="false" />
   </component>
   <component name="TaskManager">
+<<<<<<< Updated upstream
     <task active="true" id="Default" summary="Default task">
       <changelist id="74779f83-c725-4ef7-84a2-b62f11726b48" name="Default" comment="" />
       <created>1507622741952</created>
@@ -718,6 +724,20 @@
   </component>
   <component name="TimeTrackingManager">
     <option name="totallyTimeSpent" value="23068000" />
+=======
+    <task id="LOCAL-00001" summary="hubangzhen">
+      <created>1507695981782</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1507695981782</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
+    <servers />
+  </component>
+  <component name="TimeTrackingManager">
+    <option name="totallyTimeSpent" value="2517000" />
+>>>>>>> Stashed changes
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1616" height="876" extended-state="6" />
@@ -757,6 +777,7 @@
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
+<<<<<<< Updated upstream
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
   </component>
@@ -776,6 +797,11 @@
     <MESSAGE value="解决图标异常" />
     <MESSAGE value="解决左侧列表图标字体异常_关键文件" />
     <option name="LAST_COMMIT_MESSAGE" value="解决左侧列表图标字体异常_关键文件" />
+=======
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="hubangzhen" />
+    <option name="LAST_COMMIT_MESSAGE" value="hubangzhen" />
+>>>>>>> Stashed changes
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1086,8 +1112,13 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/webapp/jsp/hubangzhen/awardpage.jsp">
       <provider selected="true" editor-type-id="text-editor">
+<<<<<<< Updated upstream
         <state relative-caret-position="552">
           <caret line="85" column="22" lean-forward="false" selection-start-line="85" selection-start-column="22" selection-end-line="85" selection-end-column="22" />
+=======
+        <state relative-caret-position="376">
+          <caret line="114" column="0" lean-forward="false" selection-start-line="114" selection-start-column="0" selection-end-line="114" selection-end-column="0" />
+>>>>>>> Stashed changes
           <folding>
             <element signature="n#style#0;n#th#0;n#tr#0;n#thead#0;n#table#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#div#1;n#body#0;n#html#0;n#!!top" expanded="false" />
