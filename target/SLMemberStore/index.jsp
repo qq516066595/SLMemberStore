@@ -77,7 +77,11 @@
                             <a class="J_menuItem" href="${pageContext.request.contextPath }/jsp/zhangzheng/roleAdmin.jsp">角色管理</a>
                         </li>
                         <li>
+<<<<<<< HEAD
                             <a class="J_menuItem" href="${pageContext.request.contextPath }/jsp/zhangzheng/jusdiction.jsp">酌情添加</a>
+=======
+                            <a class="J_menuItem" href="${pageContext.request.contextPath }/jsp/zhangzheng/jurisdiction.jsp">酌情添加</a>
+>>>>>>> 22df21e75d6ee58b48a3138c088390cfbe98ddd7
                         </li>
                     </ul>
                 </li>
@@ -103,7 +107,15 @@
                     <a href="#"><i class="fa fa-edit"></i> <span class="nav-label">电子银行</span><span
                             class="fa arrow"></span></a>
                     <ul class="nav nav-second-level">
+<<<<<<< HEAD
                         <li><a class="J_menuItem" href="mailbox.html">汇款充值</a>
+=======
+<<<<<<< HEAD
+                        <li><a class="J_menuItem" href="${pageContext.request.contextPath }/jsp/huaxiaoyao/remittance.jsp">汇款充值</a>
+=======
+                        <li><a class="J_menuItem" href="mailbox.html">汇款充值</a>
+>>>>>>> fc53c0a1671890f4262718c676cc3d699d34f6e6
+>>>>>>> 22df21e75d6ee58b48a3138c088390cfbe98ddd7
                         </li>
                         <li><a class="J_menuItem" href="mail_detail.html">基本账户</a>
                         </li>
@@ -129,7 +141,15 @@
                     <a href="#"><i class="fa fa-edit"></i> <span class="nav-label">信息查询</span><span
                             class="fa arrow"></span></a>
                     <ul class="nav nav-second-level">
+<<<<<<< HEAD
                         <li><a class="J_menuItem" href="form_basic.html">奖励查询</a>
+=======
+<<<<<<< HEAD
+                        <li><a class="J_menuItem" href="form_basic.html">奖励查询</a>
+=======
+                        <li><a class="J_menuItem" href="${pageContext.request.contextPath }/jsp/hubangzhen/awardpage.jsp">奖励查询</a>
+>>>>>>> fc53c0a1671890f4262718c676cc3d699d34f6e6
+>>>>>>> 22df21e75d6ee58b48a3138c088390cfbe98ddd7
                         </li>
                         <li><a class="J_menuItem" href="form_validate.html">推荐查询</a>
                         </li>
