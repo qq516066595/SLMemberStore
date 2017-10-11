@@ -103,7 +103,7 @@
                     <a href="#"><i class="fa fa-edit"></i> <span class="nav-label">电子银行</span><span
                             class="fa arrow"></span></a>
                     <ul class="nav nav-second-level">
-                        <li><a class="J_menuItem" href="mailbox.html">汇款充值</a>
+                        <li><a class="J_menuItem" href="${pageContext.request.contextPath }/jsp/huaxiaoyao/remittance.jsp">汇款充值</a>
                         </li>
                         <li><a class="J_menuItem" href="mail_detail.html">基本账户</a>
                         </li>
