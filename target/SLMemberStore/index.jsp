@@ -129,7 +129,7 @@
                     <a href="#"><i class="fa fa-edit"></i> <span class="nav-label">信息查询</span><span
                             class="fa arrow"></span></a>
                     <ul class="nav nav-second-level">
-                        <li><a class="J_menuItem" href="form_basic.html">奖励查询</a>
+                        <li><a class="J_menuItem" href="${pageContext.request.contextPath }/jsp/hubangzhen/awardpage.jsp">奖励查询</a>
                         </li>
                         <li><a class="J_menuItem" href="form_validate.html">推荐查询</a>
                         </li>
