@@ -103,7 +103,11 @@
                     <a href="#"><i class="fa fa-edit"></i> <span class="nav-label">电子银行</span><span
                             class="fa arrow"></span></a>
                     <ul class="nav nav-second-level">
+<<<<<<< HEAD
                         <li><a class="J_menuItem" href="${pageContext.request.contextPath }/jsp/huaxiaoyao/remittance.jsp">汇款充值</a>
+=======
+                        <li><a class="J_menuItem" href="mailbox.html">汇款充值</a>
+>>>>>>> fc53c0a1671890f4262718c676cc3d699d34f6e6
                         </li>
                         <li><a class="J_menuItem" href="mail_detail.html">基本账户</a>
                         </li>
@@ -129,7 +133,11 @@
                     <a href="#"><i class="fa fa-edit"></i> <span class="nav-label">信息查询</span><span
                             class="fa arrow"></span></a>
                     <ul class="nav nav-second-level">
+<<<<<<< HEAD
                         <li><a class="J_menuItem" href="form_basic.html">奖励查询</a>
+=======
+                        <li><a class="J_menuItem" href="${pageContext.request.contextPath }/jsp/hubangzhen/awardpage.jsp">奖励查询</a>
+>>>>>>> fc53c0a1671890f4262718c676cc3d699d34f6e6
                         </li>
                         <li><a class="J_menuItem" href="form_validate.html">推荐查询</a>
                         </li>
