@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.accp.dao.WithdrawDepositMapper">
+  <resultMap id="BaseResultMap" type="com.accp.pojo.WithdrawDeposit">
+    <result column="w_date" jdbcType="TIMESTAMP" property="wDate" />
+    <result column="w_cash_withdrawal_amount" jdbcType="REAL" property="wCashWithdrawalAmount" />
+    <result column="w_transfer_amount" jdbcType="REAL" property="wTransferAmount" />
+    <result column="w_state" jdbcType="INTEGER" property="wState" />
+  </resultMap>
+  <insert id="insert" parameterType="com.accp.pojo.WithdrawDeposit">
+    insert into tab_withdraw_deposit (w_date, w_cash_withdrawal_amount, w_transfer_amount, 
+      w_state)
+    values (#{wDate,jdbcType=TIMESTAMP}, #{wCashWithdrawalAmount,jdbcType=REAL}, #{wTransferAmount,jdbcType=REAL}, 
+      #{wState,jdbcType=INTEGER})
+  </insert>
+  <insert id="insertSelective" parameterType="com.accp.pojo.WithdrawDeposit">
+    insert into tab_withdraw_deposit
+    <trim prefix="(" suffix=")" suffixOverrides=",">
+      <if test="wDate != null">
+        w_date,
+      </if>
+      <if test="wCashWithdrawalAmount != null">
+        w_cash_withdrawal_amount,
+      </if>
+      <if test="wTransferAmount != null">
+        w_transfer_amount,
+      </if>
+      <if test="wState != null">
+        w_state,
+      </if>
+    </trim>
+    <trim prefix="values (" suffix=")" suffixOverrides=",">
+      <if test="wDate != null">
+        #{wDate,jdbcType=TIMESTAMP},
+      </if>
+      <if test="wCashWithdrawalAmount != null">
+        #{wCashWithdrawalAmount,jdbcType=REAL},
+      </if>
+      <if test="wTransferAmount != null">
+        #{wTransferAmount,jdbcType=REAL},
+      </if>
+      <if test="wState != null">
+        #{wState,jdbcType=INTEGER},
+      </if>
+    </trim>
+  </insert>
+</mapper>

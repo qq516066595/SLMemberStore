@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.accp.dao.RemittanceMapper">
+  <resultMap id="BaseResultMap" type="com.accp.pojo.Remittance">
+    <result column="r_date" jdbcType="TIMESTAMP" property="rDate" />
+    <result column="r_money" jdbcType="REAL" property="rMoney" />
+    <result column="r_abstract" jdbcType="VARCHAR" property="rAbstract" />
+    <result column="r_odd" jdbcType="VARCHAR" property="rOdd" />
+  </resultMap>
+  <insert id="insert" parameterType="com.accp.pojo.Remittance">
+    insert into tab_remittance (r_date, r_money, r_abstract, 
+      r_odd)
+    values (#{rDate,jdbcType=TIMESTAMP}, #{rMoney,jdbcType=REAL}, #{rAbstract,jdbcType=VARCHAR}, 
+      #{rOdd,jdbcType=VARCHAR})
+  </insert>
+  <insert id="insertSelective" parameterType="com.accp.pojo.Remittance">
+    insert into tab_remittance
+    <trim prefix="(" suffix=")" suffixOverrides=",">
+      <if test="rDate != null">
+        r_date,
+      </if>
+      <if test="rMoney != null">
+        r_money,
+      </if>
+      <if test="rAbstract != null">
+        r_abstract,
+      </if>
+      <if test="rOdd != null">
+        r_odd,
+      </if>
+    </trim>
+    <trim prefix="values (" suffix=")" suffixOverrides=",">
+      <if test="rDate != null">
+        #{rDate,jdbcType=TIMESTAMP},
+      </if>
+      <if test="rMoney != null">
+        #{rMoney,jdbcType=REAL},
+      </if>
+      <if test="rAbstract != null">
+        #{rAbstract,jdbcType=VARCHAR},
+      </if>
+      <if test="rOdd != null">
+        #{rOdd,jdbcType=VARCHAR},
+      </if>
+    </trim>
+  </insert>
+</mapper>

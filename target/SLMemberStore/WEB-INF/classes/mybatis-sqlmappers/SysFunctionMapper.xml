@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.accp.dao.SysFunctionMapper">
+  <resultMap id="BaseResultMap" type="com.accp.pojo.SysFunction">
+    <id column="f_id" jdbcType="INTEGER" property="fId" />
+    <result column="f_menuId" jdbcType="VARCHAR" property="fMenuId" />
+    <result column="f_type" jdbcType="VARCHAR" property="fType" />
+  </resultMap>
+  <sql id="Base_Column_List">
+    f_id, f_menuId, f_type
+  </sql>
+  <select id="selectByPrimaryKey" parameterType="java.lang.Integer" resultMap="BaseResultMap">
+    select 
+    <include refid="Base_Column_List" />
+    from tab_sys_function
+    where f_id = #{fId,jdbcType=INTEGER}
+  </select>
+  <delete id="deleteByPrimaryKey" parameterType="java.lang.Integer">
+    delete from tab_sys_function
+    where f_id = #{fId,jdbcType=INTEGER}
+  </delete>
+  <insert id="insert" parameterType="com.accp.pojo.SysFunction">
+    insert into tab_sys_function (f_id, f_menuId, f_type
+      )
+    values (#{fId,jdbcType=INTEGER}, #{fMenuid,jdbcType=VARCHAR}, #{fType,jdbcType=VARCHAR}
+      )
+  </insert>
+  <insert id="insertSelective" parameterType="com.accp.pojo.SysFunction">
+    insert into tab_sys_function
+    <trim prefix="(" suffix=")" suffixOverrides=",">
+      <if test="fId != null">
+        f_id,
+      </if>
+      <if test="fMenuid != null">
+        f_menuId,
+      </if>
+      <if test="fType != null">
+        f_type,
+      </if>
+    </trim>
+    <trim prefix="values (" suffix=")" suffixOverrides=",">
+      <if test="fId != null">
+        #{fId,jdbcType=INTEGER},
+      </if>
+      <if test="fMenuid != null">
+        #{fMenuid,jdbcType=VARCHAR},
+      </if>
+      <if test="fType != null">
+        #{fType,jdbcType=VARCHAR},
+      </if>
+    </trim>
+  </insert>
+  <update id="updateByPrimaryKeySelective" parameterType="com.accp.pojo.SysFunction">
+    update tab_sys_function
+    <set>
+      <if test="fMenuid != null">
+        f_menuId = #{fMenuid,jdbcType=VARCHAR},
+      </if>
+      <if test="fType != null">
+        f_type = #{fType,jdbcType=VARCHAR},
+      </if>
+    </set>
+    where f_id = #{fId,jdbcType=INTEGER}
+  </update>
+  <update id="updateByPrimaryKey" parameterType="com.accp.pojo.SysFunction">
+    update tab_sys_function
+    set f_menuId = #{fMenuid,jdbcType=VARCHAR},
+      f_type = #{fType,jdbcType=VARCHAR}
+    where f_id = #{fId,jdbcType=INTEGER}
+  </update>
+</mapper>

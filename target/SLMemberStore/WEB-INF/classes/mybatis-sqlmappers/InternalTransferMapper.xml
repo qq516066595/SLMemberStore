@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.accp.dao.InternalTransferMapper">
+  <resultMap id="BaseResultMap" type="com.accp.pojo.InternalTransfer">
+    <result column="i_balance" jdbcType="REAL" property="iBalance" />
+    <result column="i_Transfer_target_member" jdbcType="VARCHAR" property="iTransferTargetMember" />
+    <result column="i_transfer_amount" jdbcType="REAL" property="iTransferAmount" />
+    <result column="i_password" jdbcType="VARCHAR" property="iPassword" />
+  </resultMap>
+  <insert id="insert" parameterType="com.accp.pojo.InternalTransfer">
+    insert into tab_internal_transfer (i_balance, i_Transfer_target_member, i_transfer_amount, 
+      i_password)
+    values (#{iBalance,jdbcType=REAL}, #{iTransferTargetMember,jdbcType=VARCHAR}, #{iTransferAmount,jdbcType=REAL}, 
+      #{iPassword,jdbcType=VARCHAR})
+  </insert>
+  <insert id="insertSelective" parameterType="com.accp.pojo.InternalTransfer">
+    insert into tab_internal_transfer
+    <trim prefix="(" suffix=")" suffixOverrides=",">
+      <if test="iBalance != null">
+        i_balance,
+      </if>
+      <if test="iTransferTargetMember != null">
+        i_Transfer_target_member,
+      </if>
+      <if test="iTransferAmount != null">
+        i_transfer_amount,
+      </if>
+      <if test="iPassword != null">
+        i_password,
+      </if>
+    </trim>
+    <trim prefix="values (" suffix=")" suffixOverrides=",">
+      <if test="iBalance != null">
+        #{iBalance,jdbcType=REAL},
+      </if>
+      <if test="iTransferTargetMember != null">
+        #{iTransferTargetMember,jdbcType=VARCHAR},
+      </if>
+      <if test="iTransferAmount != null">
+        #{iTransferAmount,jdbcType=REAL},
+      </if>
+      <if test="iPassword != null">
+        #{iPassword,jdbcType=VARCHAR},
+      </if>
+    </trim>
+  </insert>
+</mapper>

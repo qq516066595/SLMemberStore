@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.accp.dao.MasterMapper">
+  <resultMap id="BaseResultMap" type="com.accp.pojo.Master">
+    <result column="m_roleId" jdbcType="INTEGER" property="mRoleId" />
+    <result column="m_roleName" jdbcType="VARCHAR" property="mRoleName" />
+    <result column="v_id" jdbcType="INTEGER" property="vId" />
+    <result column="v_type" jdbcType="VARCHAR" property="vType" />
+    <result column="m_state" jdbcType="INTEGER" property="mState" />
+  </resultMap>
+  <insert id="insert" parameterType="com.accp.pojo.Master">
+    insert into tab_master (m_roleId, m_roleName, v_id, 
+      v_type, m_state)
+    values (#{mRoleid,jdbcType=INTEGER}, #{mRolename,jdbcType=VARCHAR}, #{vId,jdbcType=INTEGER}, 
+      #{vType,jdbcType=VARCHAR}, #{mState,jdbcType=INTEGER})
+  </insert>
+  <insert id="insertSelective" parameterType="com.accp.pojo.Master">
+    insert into tab_master
+    <trim prefix="(" suffix=")" suffixOverrides=",">
+      <if test="mRoleid != null">
+        m_roleId,
+      </if>
+      <if test="mRolename != null">
+        m_roleName,
+      </if>
+      <if test="vId != null">
+        v_id,
+      </if>
+      <if test="vType != null">
+        v_type,
+      </if>
+      <if test="mState != null">
+        m_state,
+      </if>
+    </trim>
+    <trim prefix="values (" suffix=")" suffixOverrides=",">
+      <if test="mRoleid != null">
+        #{mRoleid,jdbcType=INTEGER},
+      </if>
+      <if test="mRolename != null">
+        #{mRolename,jdbcType=VARCHAR},
+      </if>
+      <if test="vId != null">
+        #{vId,jdbcType=INTEGER},
+      </if>
+      <if test="vType != null">
+        #{vType,jdbcType=VARCHAR},
+      </if>
+      <if test="mState != null">
+        #{mState,jdbcType=INTEGER},
+      </if>
+    </trim>
+  </insert>
+</mapper>

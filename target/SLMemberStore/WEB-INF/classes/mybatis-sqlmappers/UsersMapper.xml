@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.accp.dao.UsersMapper">
+  <resultMap id="BaseResultMap" type="com.accp.pojo.Users">
+    <result column="u_uid" jdbcType="VARCHAR" property="uUid" />
+    <result column="u_name" jdbcType="VARCHAR" property="uName" />
+    <result column="u_pwd" jdbcType="VARCHAR" property="uPwd" />
+    <result column="u_phone" jdbcType="VARCHAR" property="uPhone" />
+    <result column="u_yPhone" jdbcType="VARCHAR" property="uYPhone" />
+    <result column="u_idCatType" jdbcType="VARCHAR" property="uIdCatType" />
+    <result column="u_idCat" jdbcType="VARCHAR" property="uIdCat" />
+    <result column="u_emain" jdbcType="VARCHAR" property="uEmain" />
+    <result column="u_postCode" jdbcType="INTEGER" property="uPostCode" />
+    <result column="u_referrer" jdbcType="VARCHAR" property="uReferrer" />
+    <result column="u_openAccount" jdbcType="VARCHAR" property="uOpenAccount" />
+    <result column="u_openMan" jdbcType="VARCHAR" property="uOpenMan" />
+    <result column="u_openNumber" jdbcType="VARCHAR" property="uOpenNumber" />
+    <result column="u_idCatImg" jdbcType="VARCHAR" property="uIdCatImg" />
+    <result column="u_bankImg" jdbcType="VARCHAR" property="uBankImg" />
+    <result column="u_address" jdbcType="VARCHAR" property="uAddress" />
+    <result column="u_guojia" jdbcType="VARCHAR" property="uGuojia" />
+    <result column="u_careteDate" jdbcType="DATE" property="uCareteDate" />
+    <result column="u_updateDate" jdbcType="DATE" property="uUpdateDate" />
+    <result column="m_roleid" jdbcType="INTEGER" property="mRoleid" />
+    <result column="m_vtype" jdbcType="INTEGER" property="mVtype" />
+  </resultMap>
+  <insert id="insert" parameterType="com.accp.pojo.Users">
+    insert into tab_users (u_uid, u_name, u_pwd, 
+      u_phone, u_yPhone, u_idCatType, 
+      u_idCat, u_emain, u_postCode, 
+      u_referrer, u_openAccount, u_openMan, 
+      u_openNumber, u_idCatImg, u_bankImg, 
+      u_address, u_guojia, u_careteDate, 
+      u_updateDate, m_roleid, m_vtype
+      )
+    values (#{uUid,jdbcType=VARCHAR}, #{uName,jdbcType=VARCHAR}, #{uPwd,jdbcType=VARCHAR}, 
+      #{uPhone,jdbcType=VARCHAR}, #{uYphone,jdbcType=VARCHAR}, #{uIdcattype,jdbcType=VARCHAR}, 
+      #{uIdcat,jdbcType=VARCHAR}, #{uEmain,jdbcType=VARCHAR}, #{uPostcode,jdbcType=INTEGER}, 
+      #{uReferrer,jdbcType=VARCHAR}, #{uOpenaccount,jdbcType=VARCHAR}, #{uOpenman,jdbcType=VARCHAR}, 
+      #{uOpennumber,jdbcType=VARCHAR}, #{uIdcatimg,jdbcType=VARCHAR}, #{uBankimg,jdbcType=VARCHAR}, 
+      #{uAddress,jdbcType=VARCHAR}, #{uGuojia,jdbcType=VARCHAR}, #{uCaretedate,jdbcType=DATE}, 
+      #{uUpdatedate,jdbcType=DATE}, #{mRoleid,jdbcType=INTEGER}, #{mVtype,jdbcType=INTEGER}
+      )
+  </insert>
+  <insert id="insertSelective" parameterType="com.accp.pojo.Users">
+    insert into tab_users
+    <trim prefix="(" suffix=")" suffixOverrides=",">
+      <if test="uUid != null">
+        u_uid,
+      </if>
+      <if test="uName != null">
+        u_name,
+      </if>
+      <if test="uPwd != null">
+        u_pwd,
+      </if>
+      <if test="uPhone != null">
+        u_phone,
+      </if>
+      <if test="uYphone != null">
+        u_yPhone,
+      </if>
+      <if test="uIdcattype != null">
+        u_idCatType,
+      </if>
+      <if test="uIdcat != null">
+        u_idCat,
+      </if>
+      <if test="uEmain != null">
+        u_emain,
+      </if>
+      <if test="uPostcode != null">
+        u_postCode,
+      </if>
+      <if test="uReferrer != null">
+        u_referrer,
+      </if>
+      <if test="uOpenaccount != null">
+        u_openAccount,
+      </if>
+      <if test="uOpenman != null">
+        u_openMan,
+      </if>
+      <if test="uOpennumber != null">
+        u_openNumber,
+      </if>
+      <if test="uIdcatimg != null">
+        u_idCatImg,
+      </if>
+      <if test="uBankimg != null">
+        u_bankImg,
+      </if>
+      <if test="uAddress != null">
+        u_address,
+      </if>
+      <if test="uGuojia != null">
+        u_guojia,
+      </if>
+      <if test="uCaretedate != null">
+        u_careteDate,
+      </if>
+      <if test="uUpdatedate != null">
+        u_updateDate,
+      </if>
+      <if test="mRoleid != null">
+        m_roleid,
+      </if>
+      <if test="mVtype != null">
+        m_vtype,
+      </if>
+    </trim>
+    <trim prefix="values (" suffix=")" suffixOverrides=",">
+      <if test="uUid != null">
+        #{uUid,jdbcType=VARCHAR},
+      </if>
+      <if test="uName != null">
+        #{uName,jdbcType=VARCHAR},
+      </if>
+      <if test="uPwd != null">
+        #{uPwd,jdbcType=VARCHAR},
+      </if>
+      <if test="uPhone != null">
+        #{uPhone,jdbcType=VARCHAR},
+      </if>
+      <if test="uYphone != null">
+        #{uYphone,jdbcType=VARCHAR},
+      </if>
+      <if test="uIdcattype != null">
+        #{uIdcattype,jdbcType=VARCHAR},
+      </if>
+      <if test="uIdcat != null">
+        #{uIdcat,jdbcType=VARCHAR},
+      </if>
+      <if test="uEmain != null">
+        #{uEmain,jdbcType=VARCHAR},
+      </if>
+      <if test="uPostcode != null">
+        #{uPostcode,jdbcType=INTEGER},
+      </if>
+      <if test="uReferrer != null">
+        #{uReferrer,jdbcType=VARCHAR},
+      </if>
+      <if test="uOpenaccount != null">
+        #{uOpenaccount,jdbcType=VARCHAR},
+      </if>
+      <if test="uOpenman != null">
+        #{uOpenman,jdbcType=VARCHAR},
+      </if>
+      <if test="uOpennumber != null">
+        #{uOpennumber,jdbcType=VARCHAR},
+      </if>
+      <if test="uIdcatimg != null">
+        #{uIdcatimg,jdbcType=VARCHAR},
+      </if>
+      <if test="uBankimg != null">
+        #{uBankimg,jdbcType=VARCHAR},
+      </if>
+      <if test="uAddress != null">
+        #{uAddress,jdbcType=VARCHAR},
+      </if>
+      <if test="uGuojia != null">
+        #{uGuojia,jdbcType=VARCHAR},
+      </if>
+      <if test="uCaretedate != null">
+        #{uCaretedate,jdbcType=DATE},
+      </if>
+      <if test="uUpdatedate != null">
+        #{uUpdatedate,jdbcType=DATE},
+      </if>
+      <if test="mRoleid != null">
+        #{mRoleid,jdbcType=INTEGER},
+      </if>
+      <if test="mVtype != null">
+        #{mVtype,jdbcType=INTEGER},
+      </if>
+    </trim>
+  </insert>
+</mapper>

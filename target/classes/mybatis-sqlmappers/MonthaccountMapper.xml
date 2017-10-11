@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.accp.dao.MonthaccountMapper">
+  <resultMap id="BaseResultMap" type="com.accp.pojo.Monthaccount">
+    <id column="m_sequence" jdbcType="INTEGER" property="mSequence" />
+    <result column="m_month" jdbcType="TIMESTAMP" property="mMonth" />
+    <result column="m_repetaward" jdbcType="REAL" property="mRepetaward" />
+    <result column="m_repetprice" jdbcType="REAL" property="mRepetprice" />
+    <result column="m_total" jdbcType="REAL" property="mTotal" />
+  </resultMap>
+  <sql id="Base_Column_List">
+    m_sequence, m_month, m_repetaward, m_repetprice, m_total
+  </sql>
+  <select id="selectByPrimaryKey" parameterType="java.lang.Integer" resultMap="BaseResultMap">
+    select 
+    <include refid="Base_Column_List" />
+    from tab_monthaccount
+    where m_sequence = #{mSequence,jdbcType=INTEGER}
+  </select>
+  <delete id="deleteByPrimaryKey" parameterType="java.lang.Integer">
+    delete from tab_monthaccount
+    where m_sequence = #{mSequence,jdbcType=INTEGER}
+  </delete>
+  <insert id="insert" parameterType="com.accp.pojo.Monthaccount">
+    insert into tab_monthaccount (m_sequence, m_month, m_repetaward, 
+      m_repetprice, m_total)
+    values (#{mSequence,jdbcType=INTEGER}, #{mMonth,jdbcType=TIMESTAMP}, #{mRepetaward,jdbcType=REAL}, 
+      #{mRepetprice,jdbcType=REAL}, #{mTotal,jdbcType=REAL})
+  </insert>
+  <insert id="insertSelective" parameterType="com.accp.pojo.Monthaccount">
+    insert into tab_monthaccount
+    <trim prefix="(" suffix=")" suffixOverrides=",">
+      <if test="mSequence != null">
+        m_sequence,
+      </if>
+      <if test="mMonth != null">
+        m_month,
+      </if>
+      <if test="mRepetaward != null">
+        m_repetaward,
+      </if>
+      <if test="mRepetprice != null">
+        m_repetprice,
+      </if>
+      <if test="mTotal != null">
+        m_total,
+      </if>
+    </trim>
+    <trim prefix="values (" suffix=")" suffixOverrides=",">
+      <if test="mSequence != null">
+        #{mSequence,jdbcType=INTEGER},
+      </if>
+      <if test="mMonth != null">
+        #{mMonth,jdbcType=TIMESTAMP},
+      </if>
+      <if test="mRepetaward != null">
+        #{mRepetaward,jdbcType=REAL},
+      </if>
+      <if test="mRepetprice != null">
+        #{mRepetprice,jdbcType=REAL},
+      </if>
+      <if test="mTotal != null">
+        #{mTotal,jdbcType=REAL},
+      </if>
+    </trim>
+  </insert>
+  <update id="updateByPrimaryKeySelective" parameterType="com.accp.pojo.Monthaccount">
+    update tab_monthaccount
+    <set>
+      <if test="mMonth != null">
+        m_month = #{mMonth,jdbcType=TIMESTAMP},
+      </if>
+      <if test="mRepetaward != null">
+        m_repetaward = #{mRepetaward,jdbcType=REAL},
+      </if>
+      <if test="mRepetprice != null">
+        m_repetprice = #{mRepetprice,jdbcType=REAL},
+      </if>
+      <if test="mTotal != null">
+        m_total = #{mTotal,jdbcType=REAL},
+      </if>
+    </set>
+    where m_sequence = #{mSequence,jdbcType=INTEGER}
+  </update>
+  <update id="updateByPrimaryKey" parameterType="com.accp.pojo.Monthaccount">
+    update tab_monthaccount
+    set m_month = #{mMonth,jdbcType=TIMESTAMP},
+      m_repetaward = #{mRepetaward,jdbcType=REAL},
+      m_repetprice = #{mRepetprice,jdbcType=REAL},
+      m_total = #{mTotal,jdbcType=REAL}
+    where m_sequence = #{mSequence,jdbcType=INTEGER}
+  </update>
+</mapper>
