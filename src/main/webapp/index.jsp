@@ -77,7 +77,7 @@
                             <a class="J_menuItem" href="${pageContext.request.contextPath }/jsp/zhangzheng/roleAdmin.jsp">角色管理</a>
                         </li>
                         <li>
-                            <a class="J_menuItem" href="${pageContext.request.contextPath }/jsp/zhangzheng/jurisdiction.jsp">酌情添加</a>
+                            <a class="J_menuItem" href="${pageContext.request.contextPath }/jsp/zhangzheng/jusdiction.jsp">酌情添加</a>
                         </li>
                     </ul>
                 </li>
