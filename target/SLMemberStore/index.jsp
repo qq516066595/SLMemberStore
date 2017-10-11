@@ -116,7 +116,7 @@
                     <a href="#"><i class="fa fa-edit"></i> <span class="nav-label">购物管理</span><span
                             class="fa arrow"></span></a>
                     <ul class="nav nav-second-level">
-                        <li><a class="J_menuItem" href="form_basic.html">报单购货</a>
+                        <li><a class="J_menuItem" href="${pageContext.request.contextPath }/jsp/gaofei/taxationForm.jsp">报单购货</a>
                         </li>
                         <li><a class="J_menuItem" href="form_validate.html">确认激活</a>
                         </li>
