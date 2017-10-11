@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans
+	http://www.springframework.org/schema/beans/spring-beans.xsd">
+	<!-- 创建数据源 -->
+	<bean id="dataDasource" class="org.apache.commons.dbcp.BasicDataSource">
+		<property name="driverClassName" value="com.mysql.jdbc.Driver" />
+		<property name="url" value="jdbc:mysql://localhost:3306/db_oasystem?characterEncoding=utf8&amp;useUnicode=true&amp;useSSL=true" />
+		<property name="username" value="Gawain" />
+		<property name="password" value="gaofei000000000." />
+	</bean>
+	<!-- 创建sqlsessionfactory会话工厂 -->
+	<bean id="sqlSessionFactory" class="org.mybatis.spring.SqlSessionFactoryBean">
+		<property name="dataSource" ref="dataDasource" />
+		<property name="configLocation" value="classpath:mybatis-config.xml" />
+		<property name="mapperLocations" value="classpath:mybatis-sqlmappers/*.xml" />
+		<property name="typeAliasesPackage" value="com.accp.pojo" />
+	</bean>
+	<!-- 映射mapper文件（mybatis-sql语句） -->
+	<bean class="org.mybatis.spring.mapper.MapperScannerConfigurer" autowire="byName">
+		<property name="basePackage" value="com.accp.dao" />
+	</bean>
+</beans>

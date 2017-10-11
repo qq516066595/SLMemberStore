@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.accp.dao.DownloadcoreMapper">
+  <resultMap id="BaseResultMap" type="com.accp.pojo.Downloadcore">
+    <id column="d_id" jdbcType="INTEGER" property="dId" />
+    <result column="d_title" jdbcType="VARCHAR" property="dTitle" />
+    <result column="d_abstract" jdbcType="VARCHAR" property="dAbstract" />
+    <result column="d_date" jdbcType="TIMESTAMP" property="dDate" />
+  </resultMap>
+  <sql id="Base_Column_List">
+    d_id, d_title, d_abstract, d_date
+  </sql>
+  <select id="selectByPrimaryKey" parameterType="java.lang.Integer" resultMap="BaseResultMap">
+    select 
+    <include refid="Base_Column_List" />
+    from tab_downloadcore
+    where d_id = #{dId,jdbcType=INTEGER}
+  </select>
+  <delete id="deleteByPrimaryKey" parameterType="java.lang.Integer">
+    delete from tab_downloadcore
+    where d_id = #{dId,jdbcType=INTEGER}
+  </delete>
+  <insert id="insert" parameterType="com.accp.pojo.Downloadcore">
+    insert into tab_downloadcore (d_id, d_title, d_abstract, 
+      d_date)
+    values (#{dId,jdbcType=INTEGER}, #{dTitle,jdbcType=VARCHAR}, #{dAbstract,jdbcType=VARCHAR}, 
+      #{dDate,jdbcType=TIMESTAMP})
+  </insert>
+  <insert id="insertSelective" parameterType="com.accp.pojo.Downloadcore">
+    insert into tab_downloadcore
+    <trim prefix="(" suffix=")" suffixOverrides=",">
+      <if test="dId != null">
+        d_id,
+      </if>
+      <if test="dTitle != null">
+        d_title,
+      </if>
+      <if test="dAbstract != null">
+        d_abstract,
+      </if>
+      <if test="dDate != null">
+        d_date,
+      </if>
+    </trim>
+    <trim prefix="values (" suffix=")" suffixOverrides=",">
+      <if test="dId != null">
+        #{dId,jdbcType=INTEGER},
+      </if>
+      <if test="dTitle != null">
+        #{dTitle,jdbcType=VARCHAR},
+      </if>
+      <if test="dAbstract != null">
+        #{dAbstract,jdbcType=VARCHAR},
+      </if>
+      <if test="dDate != null">
+        #{dDate,jdbcType=TIMESTAMP},
+      </if>
+    </trim>
+  </insert>
+  <update id="updateByPrimaryKeySelective" parameterType="com.accp.pojo.Downloadcore">
+    update tab_downloadcore
+    <set>
+      <if test="dTitle != null">
+        d_title = #{dTitle,jdbcType=VARCHAR},
+      </if>
+      <if test="dAbstract != null">
+        d_abstract = #{dAbstract,jdbcType=VARCHAR},
+      </if>
+      <if test="dDate != null">
+        d_date = #{dDate,jdbcType=TIMESTAMP},
+      </if>
+    </set>
+    where d_id = #{dId,jdbcType=INTEGER}
+  </update>
+  <update id="updateByPrimaryKey" parameterType="com.accp.pojo.Downloadcore">
+    update tab_downloadcore
+    set d_title = #{dTitle,jdbcType=VARCHAR},
+      d_abstract = #{dAbstract,jdbcType=VARCHAR},
+      d_date = #{dDate,jdbcType=TIMESTAMP}
+    where d_id = #{dId,jdbcType=INTEGER}
+  </update>
+</mapper>

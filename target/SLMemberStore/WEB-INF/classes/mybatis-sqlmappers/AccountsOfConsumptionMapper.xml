@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.accp.dao.AccountsOfConsumptionMapper">
+  <resultMap id="BaseResultMap" type="com.accp.pojo.AccountsOfConsumption">
+    <result column="a_date" jdbcType="TIMESTAMP" property="aDate" />
+    <result column="a_abstract" jdbcType="VARCHAR" property="aAbstract" />
+    <result column="a_entry" jdbcType="REAL" property="aEntry" />
+    <result column="a_Charge Off" jdbcType="REAL" property="aChargeOff" />
+    <result column="a_balance" jdbcType="VARCHAR" property="aBalance" />
+  </resultMap>
+  <insert id="insert" parameterType="com.accp.pojo.AccountsOfConsumption">
+    insert into tab_accounts_of_consumption (a_date, a_abstract, a_entry, 
+      "a_Charge Off", a_balance)
+    values (#{aDate,jdbcType=TIMESTAMP}, #{aAbstract,jdbcType=VARCHAR}, #{aEntry,jdbcType=REAL}, 
+      #{aChargeOff,jdbcType=REAL}, #{aBalance,jdbcType=VARCHAR})
+  </insert>
+  <insert id="insertSelective" parameterType="com.accp.pojo.AccountsOfConsumption">
+    insert into tab_accounts_of_consumption
+    <trim prefix="(" suffix=")" suffixOverrides=",">
+      <if test="aDate != null">
+        a_date,
+      </if>
+      <if test="aAbstract != null">
+        a_abstract,
+      </if>
+      <if test="aEntry != null">
+        a_entry,
+      </if>
+      <if test="aChargeOff != null">
+        "a_Charge Off",
+      </if>
+      <if test="aBalance != null">
+        a_balance,
+      </if>
+    </trim>
+    <trim prefix="values (" suffix=")" suffixOverrides=",">
+      <if test="aDate != null">
+        #{aDate,jdbcType=TIMESTAMP},
+      </if>
+      <if test="aAbstract != null">
+        #{aAbstract,jdbcType=VARCHAR},
+      </if>
+      <if test="aEntry != null">
+        #{aEntry,jdbcType=REAL},
+      </if>
+      <if test="aChargeOff != null">
+        #{aChargeOff,jdbcType=REAL},
+      </if>
+      <if test="aBalance != null">
+        #{aBalance,jdbcType=VARCHAR},
+      </if>
+    </trim>
+  </insert>
+</mapper>

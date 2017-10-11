@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.accp.dao.AreaMapper">
+  <resultMap id="BaseResultMap" type="com.accp.pojo.Area">
+    <result column="a_id" jdbcType="INTEGER" property="aId" />
+    <result column="a_headcount" jdbcType="INTEGER" property="aHeadcount" />
+    <result column="a_newposit" jdbcType="INTEGER" property="aNewposit" />
+    <result column="a_bumpnumber" jdbcType="INTEGER" property="aBumpnumber" />
+    <result column="a_trophiesid" jdbcType="INTEGER" property="aTrophiesid" />
+  </resultMap>
+  <insert id="insert" parameterType="com.accp.pojo.Area">
+    insert into tab_area (a_id, a_headcount, a_newposit, 
+      a_bumpnumber, a_trophiesid)
+    values (#{aId,jdbcType=INTEGER}, #{aHeadcount,jdbcType=INTEGER}, #{aNewposit,jdbcType=INTEGER}, 
+      #{aBumpnumber,jdbcType=INTEGER}, #{aTrophiesid,jdbcType=INTEGER})
+  </insert>
+  <insert id="insertSelective" parameterType="com.accp.pojo.Area">
+    insert into tab_area
+    <trim prefix="(" suffix=")" suffixOverrides=",">
+      <if test="aId != null">
+        a_id,
+      </if>
+      <if test="aHeadcount != null">
+        a_headcount,
+      </if>
+      <if test="aNewposit != null">
+        a_newposit,
+      </if>
+      <if test="aBumpnumber != null">
+        a_bumpnumber,
+      </if>
+      <if test="aTrophiesid != null">
+        a_trophiesid,
+      </if>
+    </trim>
+    <trim prefix="values (" suffix=")" suffixOverrides=",">
+      <if test="aId != null">
+        #{aId,jdbcType=INTEGER},
+      </if>
+      <if test="aHeadcount != null">
+        #{aHeadcount,jdbcType=INTEGER},
+      </if>
+      <if test="aNewposit != null">
+        #{aNewposit,jdbcType=INTEGER},
+      </if>
+      <if test="aBumpnumber != null">
+        #{aBumpnumber,jdbcType=INTEGER},
+      </if>
+      <if test="aTrophiesid != null">
+        #{aTrophiesid,jdbcType=INTEGER},
+      </if>
+    </trim>
+  </insert>
+</mapper>

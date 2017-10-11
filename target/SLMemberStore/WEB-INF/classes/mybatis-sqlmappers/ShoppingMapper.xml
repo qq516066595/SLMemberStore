@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.accp.dao.ShoppingMapper">
+  <resultMap id="BaseResultMap" type="com.accp.pojo.Shopping">
+    <id column="s_id" jdbcType="INTEGER" property="sId" />
+    <result column="s_name" jdbcType="VARCHAR" property="sName" />
+    <result column="s_price" jdbcType="DOUBLE" property="sPrice" />
+    <result column="s_discount" jdbcType="DOUBLE" property="sDiscount" />
+    <result column="s_spCount" jdbcType="INTEGER" property="sSpCount" />
+    <result column="s_spState" jdbcType="INTEGER" property="sSpState" />
+    <result column="s_lastDate" jdbcType="DATE" property="sLastDate" />
+    <result column="s_spDesc" jdbcType="VARCHAR" property="sSpDesc" />
+    <result column="s_company" jdbcType="VARCHAR" property="sCompany" />
+  </resultMap>
+  <sql id="Base_Column_List">
+    s_id, s_name, s_price, s_discount, s_spCount, s_spState, s_lastDate, s_spDesc, s_company
+  </sql>
+  <select id="selectByPrimaryKey" parameterType="java.lang.Integer" resultMap="BaseResultMap">
+    select 
+    <include refid="Base_Column_List" />
+    from tab_shopping
+    where s_id = #{sId,jdbcType=INTEGER}
+  </select>
+  <delete id="deleteByPrimaryKey" parameterType="java.lang.Integer">
+    delete from tab_shopping
+    where s_id = #{sId,jdbcType=INTEGER}
+  </delete>
+  <insert id="insert" parameterType="com.accp.pojo.Shopping">
+    insert into tab_shopping (s_id, s_name, s_price, 
+      s_discount, s_spCount, s_spState, 
+      s_lastDate, s_spDesc, s_company
+      )
+    values (#{sId,jdbcType=INTEGER}, #{sName,jdbcType=VARCHAR}, #{sPrice,jdbcType=DOUBLE}, 
+      #{sDiscount,jdbcType=DOUBLE}, #{sSpcount,jdbcType=INTEGER}, #{sSpstate,jdbcType=INTEGER}, 
+      #{sLastdate,jdbcType=DATE}, #{sSpdesc,jdbcType=VARCHAR}, #{sCompany,jdbcType=VARCHAR}
+      )
+  </insert>
+  <insert id="insertSelective" parameterType="com.accp.pojo.Shopping">
+    insert into tab_shopping
+    <trim prefix="(" suffix=")" suffixOverrides=",">
+      <if test="sId != null">
+        s_id,
+      </if>
+      <if test="sName != null">
+        s_name,
+      </if>
+      <if test="sPrice != null">
+        s_price,
+      </if>
+      <if test="sDiscount != null">
+        s_discount,
+      </if>
+      <if test="sSpcount != null">
+        s_spCount,
+      </if>
+      <if test="sSpstate != null">
+        s_spState,
+      </if>
+      <if test="sLastdate != null">
+        s_lastDate,
+      </if>
+      <if test="sSpdesc != null">
+        s_spDesc,
+      </if>
+      <if test="sCompany != null">
+        s_company,
+      </if>
+    </trim>
+    <trim prefix="values (" suffix=")" suffixOverrides=",">
+      <if test="sId != null">
+        #{sId,jdbcType=INTEGER},
+      </if>
+      <if test="sName != null">
+        #{sName,jdbcType=VARCHAR},
+      </if>
+      <if test="sPrice != null">
+        #{sPrice,jdbcType=DOUBLE},
+      </if>
+      <if test="sDiscount != null">
+        #{sDiscount,jdbcType=DOUBLE},
+      </if>
+      <if test="sSpcount != null">
+        #{sSpcount,jdbcType=INTEGER},
+      </if>
+      <if test="sSpstate != null">
+        #{sSpstate,jdbcType=INTEGER},
+      </if>
+      <if test="sLastdate != null">
+        #{sLastdate,jdbcType=DATE},
+      </if>
+      <if test="sSpdesc != null">
+        #{sSpdesc,jdbcType=VARCHAR},
+      </if>
+      <if test="sCompany != null">
+        #{sCompany,jdbcType=VARCHAR},
+      </if>
+    </trim>
+  </insert>
+  <update id="updateByPrimaryKeySelective" parameterType="com.accp.pojo.Shopping">
+    update tab_shopping
+    <set>
+      <if test="sName != null">
+        s_name = #{sName,jdbcType=VARCHAR},
+      </if>
+      <if test="sPrice != null">
+        s_price = #{sPrice,jdbcType=DOUBLE},
+      </if>
+      <if test="sDiscount != null">
+        s_discount = #{sDiscount,jdbcType=DOUBLE},
+      </if>
+      <if test="sSpcount != null">
+        s_spCount = #{sSpcount,jdbcType=INTEGER},
+      </if>
+      <if test="sSpstate != null">
+        s_spState = #{sSpstate,jdbcType=INTEGER},
+      </if>
+      <if test="sLastdate != null">
+        s_lastDate = #{sLastdate,jdbcType=DATE},
+      </if>
+      <if test="sSpdesc != null">
+        s_spDesc = #{sSpdesc,jdbcType=VARCHAR},
+      </if>
+      <if test="sCompany != null">
+        s_company = #{sCompany,jdbcType=VARCHAR},
+      </if>
+    </set>
+    where s_id = #{sId,jdbcType=INTEGER}
+  </update>
+  <update id="updateByPrimaryKey" parameterType="com.accp.pojo.Shopping">
+    update tab_shopping
+    set s_name = #{sName,jdbcType=VARCHAR},
+      s_price = #{sPrice,jdbcType=DOUBLE},
+      s_discount = #{sDiscount,jdbcType=DOUBLE},
+      s_spCount = #{sSpcount,jdbcType=INTEGER},
+      s_spState = #{sSpstate,jdbcType=INTEGER},
+      s_lastDate = #{sLastdate,jdbcType=DATE},
+      s_spDesc = #{sSpdesc,jdbcType=VARCHAR},
+      s_company = #{sCompany,jdbcType=VARCHAR}
+    where s_id = #{sId,jdbcType=INTEGER}
+  </update>
+</mapper>
