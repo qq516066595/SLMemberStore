@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.accp.dao.MessageMapper">
+  <resultMap id="BaseResultMap" type="com.accp.pojo.Message">
+    <id column="m_id" jdbcType="INTEGER" property="mId" />
+    <result column="m_mesgccount" jdbcType="VARCHAR" property="mMesgccount" />
+    <result column="m_words" jdbcType="VARCHAR" property="mWords" />
+    <result column="m_state" jdbcType="INTEGER" property="mState" />
+    <result column="m_date" jdbcType="TIMESTAMP" property="mDate" />
+  </resultMap>
+  <sql id="Base_Column_List">
+    m_id, m_mesgccount, m_words, m_state, m_date
+  </sql>
+  <select id="selectByPrimaryKey" parameterType="java.lang.Integer" resultMap="BaseResultMap">
+    select 
+    <include refid="Base_Column_List" />
+    from tab_message
+    where m_id = #{mId,jdbcType=INTEGER}
+  </select>
+  <delete id="deleteByPrimaryKey" parameterType="java.lang.Integer">
+    delete from tab_message
+    where m_id = #{mId,jdbcType=INTEGER}
+  </delete>
+  <insert id="insert" parameterType="com.accp.pojo.Message">
+    insert into tab_message (m_id, m_mesgccount, m_words, 
+      m_state, m_date)
+    values (#{mId,jdbcType=INTEGER}, #{mMesgccount,jdbcType=VARCHAR}, #{mWords,jdbcType=VARCHAR}, 
+      #{mState,jdbcType=INTEGER}, #{mDate,jdbcType=TIMESTAMP})
+  </insert>
+  <insert id="insertSelective" parameterType="com.accp.pojo.Message">
+    insert into tab_message
+    <trim prefix="(" suffix=")" suffixOverrides=",">
+      <if test="mId != null">
+        m_id,
+      </if>
+      <if test="mMesgccount != null">
+        m_mesgccount,
+      </if>
+      <if test="mWords != null">
+        m_words,
+      </if>
+      <if test="mState != null">
+        m_state,
+      </if>
+      <if test="mDate != null">
+        m_date,
+      </if>
+    </trim>
+    <trim prefix="values (" suffix=")" suffixOverrides=",">
+      <if test="mId != null">
+        #{mId,jdbcType=INTEGER},
+      </if>
+      <if test="mMesgccount != null">
+        #{mMesgccount,jdbcType=VARCHAR},
+      </if>
+      <if test="mWords != null">
+        #{mWords,jdbcType=VARCHAR},
+      </if>
+      <if test="mState != null">
+        #{mState,jdbcType=INTEGER},
+      </if>
+      <if test="mDate != null">
+        #{mDate,jdbcType=TIMESTAMP},
+      </if>
+    </trim>
+  </insert>
+  <update id="updateByPrimaryKeySelective" parameterType="com.accp.pojo.Message">
+    update tab_message
+    <set>
+      <if test="mMesgccount != null">
+        m_mesgccount = #{mMesgccount,jdbcType=VARCHAR},
+      </if>
+      <if test="mWords != null">
+        m_words = #{mWords,jdbcType=VARCHAR},
+      </if>
+      <if test="mState != null">
+        m_state = #{mState,jdbcType=INTEGER},
+      </if>
+      <if test="mDate != null">
+        m_date = #{mDate,jdbcType=TIMESTAMP},
+      </if>
+    </set>
+    where m_id = #{mId,jdbcType=INTEGER}
+  </update>
+  <update id="updateByPrimaryKey" parameterType="com.accp.pojo.Message">
+    update tab_message
+    set m_mesgccount = #{mMesgccount,jdbcType=VARCHAR},
+      m_words = #{mWords,jdbcType=VARCHAR},
+      m_state = #{mState,jdbcType=INTEGER},
+      m_date = #{mDate,jdbcType=TIMESTAMP}
+    where m_id = #{mId,jdbcType=INTEGER}
+  </update>
+</mapper>

@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.accp.dao.ApplyforlevelMapper">
+  <resultMap id="BaseResultMap" type="com.accp.pojo.Applyforlevel">
+    <id column="id" jdbcType="INTEGER" property="id" />
+    <result column="levelName" jdbcType="VARCHAR" property="levelName" />
+    <result column="expense" jdbcType="DECIMAL" property="expense" />
+    <result column="pv" jdbcType="DECIMAL" property="pv" />
+    <result column="server" jdbcType="DECIMAL" property="server" />
+  </resultMap>
+  <sql id="Base_Column_List">
+    id, levelName, expense, pv, server
+  </sql>
+  <select id="selectByPrimaryKey" parameterType="java.lang.Integer" resultMap="BaseResultMap">
+    select 
+    <include refid="Base_Column_List" />
+    from tab_applyforlevel
+    where id = #{id,jdbcType=INTEGER}
+  </select>
+  <delete id="deleteByPrimaryKey" parameterType="java.lang.Integer">
+    delete from tab_applyforlevel
+    where id = #{id,jdbcType=INTEGER}
+  </delete>
+  <insert id="insert" parameterType="com.accp.pojo.Applyforlevel">
+    insert into tab_applyforlevel (id, levelName, expense, 
+      pv, server)
+    values (#{id,jdbcType=INTEGER}, #{levelname,jdbcType=VARCHAR}, #{expense,jdbcType=DECIMAL}, 
+      #{pv,jdbcType=DECIMAL}, #{server,jdbcType=DECIMAL})
+  </insert>
+  <insert id="insertSelective" parameterType="com.accp.pojo.Applyforlevel">
+    insert into tab_applyforlevel
+    <trim prefix="(" suffix=")" suffixOverrides=",">
+      <if test="id != null">
+        id,
+      </if>
+      <if test="levelname != null">
+        levelName,
+      </if>
+      <if test="expense != null">
+        expense,
+      </if>
+      <if test="pv != null">
+        pv,
+      </if>
+      <if test="server != null">
+        server,
+      </if>
+    </trim>
+    <trim prefix="values (" suffix=")" suffixOverrides=",">
+      <if test="id != null">
+        #{id,jdbcType=INTEGER},
+      </if>
+      <if test="levelname != null">
+        #{levelname,jdbcType=VARCHAR},
+      </if>
+      <if test="expense != null">
+        #{expense,jdbcType=DECIMAL},
+      </if>
+      <if test="pv != null">
+        #{pv,jdbcType=DECIMAL},
+      </if>
+      <if test="server != null">
+        #{server,jdbcType=DECIMAL},
+      </if>
+    </trim>
+  </insert>
+  <update id="updateByPrimaryKeySelective" parameterType="com.accp.pojo.Applyforlevel">
+    update tab_applyforlevel
+    <set>
+      <if test="levelname != null">
+        levelName = #{levelname,jdbcType=VARCHAR},
+      </if>
+      <if test="expense != null">
+        expense = #{expense,jdbcType=DECIMAL},
+      </if>
+      <if test="pv != null">
+        pv = #{pv,jdbcType=DECIMAL},
+      </if>
+      <if test="server != null">
+        server = #{server,jdbcType=DECIMAL},
+      </if>
+    </set>
+    where id = #{id,jdbcType=INTEGER}
+  </update>
+  <update id="updateByPrimaryKey" parameterType="com.accp.pojo.Applyforlevel">
+    update tab_applyforlevel
+    set levelName = #{levelname,jdbcType=VARCHAR},
+      expense = #{expense,jdbcType=DECIMAL},
+      pv = #{pv,jdbcType=DECIMAL},
+      server = #{server,jdbcType=DECIMAL}
+    where id = #{id,jdbcType=INTEGER}
+  </update>
+</mapper>

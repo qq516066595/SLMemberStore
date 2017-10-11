@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.accp.dao.ConsultMapper">
+  <resultMap id="BaseResultMap" type="com.accp.pojo.Consult">
+    <id column="c_id" jdbcType="INTEGER" property="cId" />
+    <result column="c_title" jdbcType="VARCHAR" property="cTitle" />
+    <result column="c_explain" jdbcType="VARCHAR" property="cExplain" />
+    <result column="c_filesize" jdbcType="REAL" property="cFilesize" />
+    <result column="c_downloadnum" jdbcType="INTEGER" property="cDownloadnum" />
+    <result column="c_state" jdbcType="INTEGER" property="cState" />
+    <result column="c_modifydate" jdbcType="TIMESTAMP" property="cModifydate" />
+  </resultMap>
+  <sql id="Base_Column_List">
+    c_id, c_title, c_explain, c_filesize, c_downloadnum, c_state, c_modifydate
+  </sql>
+  <select id="selectByPrimaryKey" parameterType="java.lang.Integer" resultMap="BaseResultMap">
+    select 
+    <include refid="Base_Column_List" />
+    from tab_consult
+    where c_id = #{cId,jdbcType=INTEGER}
+  </select>
+  <delete id="deleteByPrimaryKey" parameterType="java.lang.Integer">
+    delete from tab_consult
+    where c_id = #{cId,jdbcType=INTEGER}
+  </delete>
+  <insert id="insert" parameterType="com.accp.pojo.Consult">
+    insert into tab_consult (c_id, c_title, c_explain, 
+      c_filesize, c_downloadnum, c_state, 
+      c_modifydate)
+    values (#{cId,jdbcType=INTEGER}, #{cTitle,jdbcType=VARCHAR}, #{cExplain,jdbcType=VARCHAR}, 
+      #{cFilesize,jdbcType=REAL}, #{cDownloadnum,jdbcType=INTEGER}, #{cState,jdbcType=INTEGER}, 
+      #{cModifydate,jdbcType=TIMESTAMP})
+  </insert>
+  <insert id="insertSelective" parameterType="com.accp.pojo.Consult">
+    insert into tab_consult
+    <trim prefix="(" suffix=")" suffixOverrides=",">
+      <if test="cId != null">
+        c_id,
+      </if>
+      <if test="cTitle != null">
+        c_title,
+      </if>
+      <if test="cExplain != null">
+        c_explain,
+      </if>
+      <if test="cFilesize != null">
+        c_filesize,
+      </if>
+      <if test="cDownloadnum != null">
+        c_downloadnum,
+      </if>
+      <if test="cState != null">
+        c_state,
+      </if>
+      <if test="cModifydate != null">
+        c_modifydate,
+      </if>
+    </trim>
+    <trim prefix="values (" suffix=")" suffixOverrides=",">
+      <if test="cId != null">
+        #{cId,jdbcType=INTEGER},
+      </if>
+      <if test="cTitle != null">
+        #{cTitle,jdbcType=VARCHAR},
+      </if>
+      <if test="cExplain != null">
+        #{cExplain,jdbcType=VARCHAR},
+      </if>
+      <if test="cFilesize != null">
+        #{cFilesize,jdbcType=REAL},
+      </if>
+      <if test="cDownloadnum != null">
+        #{cDownloadnum,jdbcType=INTEGER},
+      </if>
+      <if test="cState != null">
+        #{cState,jdbcType=INTEGER},
+      </if>
+      <if test="cModifydate != null">
+        #{cModifydate,jdbcType=TIMESTAMP},
+      </if>
+    </trim>
+  </insert>
+  <update id="updateByPrimaryKeySelective" parameterType="com.accp.pojo.Consult">
+    update tab_consult
+    <set>
+      <if test="cTitle != null">
+        c_title = #{cTitle,jdbcType=VARCHAR},
+      </if>
+      <if test="cExplain != null">
+        c_explain = #{cExplain,jdbcType=VARCHAR},
+      </if>
+      <if test="cFilesize != null">
+        c_filesize = #{cFilesize,jdbcType=REAL},
+      </if>
+      <if test="cDownloadnum != null">
+        c_downloadnum = #{cDownloadnum,jdbcType=INTEGER},
+      </if>
+      <if test="cState != null">
+        c_state = #{cState,jdbcType=INTEGER},
+      </if>
+      <if test="cModifydate != null">
+        c_modifydate = #{cModifydate,jdbcType=TIMESTAMP},
+      </if>
+    </set>
+    where c_id = #{cId,jdbcType=INTEGER}
+  </update>
+  <update id="updateByPrimaryKey" parameterType="com.accp.pojo.Consult">
+    update tab_consult
+    set c_title = #{cTitle,jdbcType=VARCHAR},
+      c_explain = #{cExplain,jdbcType=VARCHAR},
+      c_filesize = #{cFilesize,jdbcType=REAL},
+      c_downloadnum = #{cDownloadnum,jdbcType=INTEGER},
+      c_state = #{cState,jdbcType=INTEGER},
+      c_modifydate = #{cModifydate,jdbcType=TIMESTAMP}
+    where c_id = #{cId,jdbcType=INTEGER}
+  </update>
+</mapper>

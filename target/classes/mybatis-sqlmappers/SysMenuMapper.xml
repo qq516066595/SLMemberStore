@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.accp.dao.SysMenuMapper">
+  <resultMap id="BaseResultMap" type="com.accp.pojo.SysMenu">
+    <id column="m_id" jdbcType="INTEGER" property="mId" />
+    <result column="m_name" jdbcType="VARCHAR" property="mName" />
+    <result column="m_url" jdbcType="VARCHAR" property="mUrl" />
+    <result column="m_desc" jdbcType="VARCHAR" property="mDesc" />
+    <result column="m_order" jdbcType="VARCHAR" property="mOrder" />
+    <result column="m_action_Name" jdbcType="VARCHAR" property="mActionName" />
+  </resultMap>
+  <sql id="Base_Column_List">
+    m_id, m_name, m_url, m_desc, m_order, m_action_Name
+  </sql>
+  <select id="selectByPrimaryKey" parameterType="java.lang.Integer" resultMap="BaseResultMap">
+    select 
+    <include refid="Base_Column_List" />
+    from tab_sys_menu
+    where m_id = #{mId,jdbcType=INTEGER}
+  </select>
+  <delete id="deleteByPrimaryKey" parameterType="java.lang.Integer">
+    delete from tab_sys_menu
+    where m_id = #{mId,jdbcType=INTEGER}
+  </delete>
+  <insert id="insert" parameterType="com.accp.pojo.SysMenu">
+    insert into tab_sys_menu (m_id, m_name, m_url, 
+      m_desc, m_order, m_action_Name
+      )
+    values (#{mId,jdbcType=INTEGER}, #{mName,jdbcType=VARCHAR}, #{mUrl,jdbcType=VARCHAR}, 
+      #{mDesc,jdbcType=VARCHAR}, #{mOrder,jdbcType=VARCHAR}, #{mActionName,jdbcType=VARCHAR}
+      )
+  </insert>
+  <insert id="insertSelective" parameterType="com.accp.pojo.SysMenu">
+    insert into tab_sys_menu
+    <trim prefix="(" suffix=")" suffixOverrides=",">
+      <if test="mId != null">
+        m_id,
+      </if>
+      <if test="mName != null">
+        m_name,
+      </if>
+      <if test="mUrl != null">
+        m_url,
+      </if>
+      <if test="mDesc != null">
+        m_desc,
+      </if>
+      <if test="mOrder != null">
+        m_order,
+      </if>
+      <if test="mActionName != null">
+        m_action_Name,
+      </if>
+    </trim>
+    <trim prefix="values (" suffix=")" suffixOverrides=",">
+      <if test="mId != null">
+        #{mId,jdbcType=INTEGER},
+      </if>
+      <if test="mName != null">
+        #{mName,jdbcType=VARCHAR},
+      </if>
+      <if test="mUrl != null">
+        #{mUrl,jdbcType=VARCHAR},
+      </if>
+      <if test="mDesc != null">
+        #{mDesc,jdbcType=VARCHAR},
+      </if>
+      <if test="mOrder != null">
+        #{mOrder,jdbcType=VARCHAR},
+      </if>
+      <if test="mActionName != null">
+        #{mActionName,jdbcType=VARCHAR},
+      </if>
+    </trim>
+  </insert>
+  <update id="updateByPrimaryKeySelective" parameterType="com.accp.pojo.SysMenu">
+    update tab_sys_menu
+    <set>
+      <if test="mName != null">
+        m_name = #{mName,jdbcType=VARCHAR},
+      </if>
+      <if test="mUrl != null">
+        m_url = #{mUrl,jdbcType=VARCHAR},
+      </if>
+      <if test="mDesc != null">
+        m_desc = #{mDesc,jdbcType=VARCHAR},
+      </if>
+      <if test="mOrder != null">
+        m_order = #{mOrder,jdbcType=VARCHAR},
+      </if>
+      <if test="mActionName != null">
+        m_action_Name = #{mActionName,jdbcType=VARCHAR},
+      </if>
+    </set>
+    where m_id = #{mId,jdbcType=INTEGER}
+  </update>
+  <update id="updateByPrimaryKey" parameterType="com.accp.pojo.SysMenu">
+    update tab_sys_menu
+    set m_name = #{mName,jdbcType=VARCHAR},
+      m_url = #{mUrl,jdbcType=VARCHAR},
+      m_desc = #{mDesc,jdbcType=VARCHAR},
+      m_order = #{mOrder,jdbcType=VARCHAR},
+      m_action_Name = #{mActionName,jdbcType=VARCHAR}
+    where m_id = #{mId,jdbcType=INTEGER}
+  </update>
+</mapper>
