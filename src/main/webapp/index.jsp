@@ -71,13 +71,13 @@
                     </a>
                     <ul class="nav nav-second-level">
                        <li>
-                            <a class="J_menuItem" href="graph_echarts.html">用户管理</a>
+                            <a class="J_menuItem" href="${pageContext.request.contextPath }/jsp/zhangzheng/userAdmin.jsp">用户管理</a>
                         </li>
                         <li>
-                            <a class="J_menuItem" href="graph_flot.html">角色管理</a>
+                            <a class="J_menuItem" href="${pageContext.request.contextPath }/jsp/zhangzheng/roleAdmin.jsp">角色管理</a>
                         </li>
                         <li>
-                            <a class="J_menuItem" href="tes.html">酌情添加</a>
+                            <a class="J_menuItem" href="${pageContext.request.contextPath }/jsp/zhangzheng/jurisdiction.jsp">酌情添加</a>
                         </li>
                     </ul>
                 </li>
