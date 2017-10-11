@@ -142,7 +142,7 @@
                     <a href="#"><i class="fa fa-edit"></i> <span class="nav-label">咨询管理</span><span
                             class="fa arrow"></span></a>
                     <ul class="nav nav-second-level">
-                        <li><a class="J_menuItem" href="form_basic.html">公告管理</a>
+                        <li><a class="J_menuItem" href="test.jsp">公告管理</a>
                         </li>
                         <li><a class="J_menuItem" href="form_validate.html">咨询管理</a>
                         </li>
