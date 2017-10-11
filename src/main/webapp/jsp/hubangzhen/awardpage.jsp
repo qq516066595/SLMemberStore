@@ -32,21 +32,23 @@
     <link href="${pageContext.request.contextPath }/css/animate.min.css" rel="stylesheet">
     <link href="${pageContext.request.contextPath }/css/style.min.css?v=4.0.0" rel="stylesheet">
     <link rel="stylesheet"
-          href="file:///F:/%E5%89%8D%E7%AB%AF%E7%B4%A0%E6%9D%90/%E5%90%8E%E5%8F%B0%E6%A8%A1%E6%9D%BF/%E6%80%BB%E4%BD%93/%E8%8A%B1%E4%BA%86money%E7%9A%84%E9%AB%98%E7%BA%A7%E5%90%8E%E5%8F%B0%E7%AE%A1%E7%90%86%E6%A8%A1%E6%9D%BF/js/plugins/layer/skin/layer.css"
+          href="${pageContext.request.contextPath }/js/plugins/layer/skin/layer.css"
           id="layui_layer_skinlayercss">
-    <script src="file:///F:/%E5%89%8D%E7%AB%AF%E7%B4%A0%E6%9D%90/%E5%90%8E%E5%8F%B0%E6%A8%A1%E6%9D%BF/%E6%80%BB%E4%BD%93/%E8%8A%B1%E4%BA%86money%E7%9A%84%E9%AB%98%E7%BA%A7%E5%90%8E%E5%8F%B0%E7%AE%A1%E7%90%86%E6%A8%A1%E6%9D%BF/js/plugins/layer/extend/layer.ext.js"
+    <script src="${pageContext.request.contextPath }/js/plugins/layer/extend/layer.ext.js"
             id="layui_layer_extendlayerextjs"></script>
 </head>
 <body>
-<div class="col-sm-6">
+<div class="col-sm-6" style="width: 1000px">
     <div class="tabs-container">
         <ul class="nav nav-tabs">
-            <li class="active"><a data-toggle="tab" href="#tab-1" aria-expanded="true"> 第一个选项卡</a>
+            <li class="active"><a data-toggle="tab" href="#tab-1" aria-expanded="true">十日结算明细</a>
             </li>
-            <li class=""><a data-toggle="tab" href="#tab-2" aria-expanded="false">第二个选项卡</a>
+            <li class=""><a data-toggle="tab" href="#tab-2" aria-expanded="false">奖金明细列表</a>
+            </li>
+            <li class=""><a data-toggle="tab" href="#tab-3" aria-expanded="false">月结算表</a>
             </li>
         </ul>
-        <div class="tab-content">
+        <div class="tab-content" >
             <div id="tab-1" class="tab-pane active">
                 <div id="DataTables_Table_0_wrapper" class="dataTables_wrapper form-inline" role="grid">
                     <table class="table table-striped table-bordered table-hover dataTables-example dataTable" id="DataTables_Table_0"
@@ -54,20 +56,20 @@
                         <thead>
                         <tr role="row">
                             <th class="sorting" tabindex="0" aria-controls="DataTables_Table_0" rowspan="2" colspan="1"
-                                aria-label="渲染引擎：激活排序列升序" style="width: 207px;">日期
+                                aria-label="渲染引擎：激活排序列升序" style="width: 100px;">日期
                             </th>
-                            <th tabindex="0" aria-controls="DataTables_Table_0" rowspan="2" colspan="1">新推荐人数</th>
-                            <th tabindex="0" aria-controls="DataTables_Table_0" rowspan="2" colspan="1">总碰局数</th>
-                            <th tabindex="0" aria-controls="DataTables_Table_0" rowspan="1" colspan="3">区域左区</th>
-                            <th tabindex="0" aria-controls="DataTables_Table_0" rowspan="1" colspan="3">区域右区</th>
+                            <th tabindex="0" aria-controls="DataTables_Table_0" rowspan="2" colspan="1" style="width: 100px;">新推荐人数</th>
+                            <th tabindex="0" aria-controls="DataTables_Table_0" rowspan="2" colspan="1" style="width: 100px;">总碰局数</th>
+                            <th tabindex="0" aria-controls="DataTables_Table_0" rowspan="1" colspan="3" style="width: 600px;">区域左区</th>
+                            <th tabindex="0" aria-controls="DataTables_Table_0" rowspan="1" colspan="3" style="width: 600px;">区域右区</th>
                         </tr>
                         <tr role="row">
-                            <th>总人数</th>
-                            <th>新安置人数</th>
-                            <th>剩余碰数</th>
-                            <th>总人数</th>
-                            <th>新安置人数</th>
-                            <th>剩余碰数</th>
+                            <th style="width: 100px;">总人数</th>
+                            <th style="width: 100px;">新安置人数</th>
+                            <th style="width: 100px;">剩余碰数</th>
+                            <th style="width: 100px;">总人数</th>
+                            <th style="width: 100px;">新安置人数</th>
+                            <th style="width: 100px;">剩余碰数</th>
                         </tr>
                         </thead>
                         <tbody>
@@ -86,9 +88,39 @@
                 </div>
             </div>
             <div id="tab-2" class="tab-pane">
+                <div id="DataTables_Table_1_wrapper" class="dataTables_wrapper form-inline" role="grid">
+                    <table class="table table-striped table-bordered table-hover dataTables-example dataTable" id="DataTables_Table_1"
+                           aria-describedby="DataTables_Table_0_info">
+                        <thead>
+                        <tr role="row">
+                            <th class="sorting" tabindex="0" aria-controls="DataTables_Table_0" rowspan="2" colspan="1"
+                                aria-label="渲染引擎：激活排序列升序" style="width: 100px;">日期
+                            </th>
+                            <th tabindex="0" aria-controls="DataTables_Table_0" rowspan="1" colspan="1" style="width: 100px;">推荐奖</th>
+                            <th tabindex="0" aria-controls="DataTables_Table_0" rowspan="1" colspan="1" style="width: 100px;">安置奖</th>
+                            <th tabindex="0" aria-controls="DataTables_Table_0" rowspan="1" colspan="1" style="width: 600px;">对碰奖</th>
+                            <th tabindex="0" aria-controls="DataTables_Table_0" rowspan="1" colspan="1" style="width: 600px;">积分消费奖</th>
+                            <th tabindex="0" aria-controls="DataTables_Table_0" rowspan="1" colspan="1" style="width: 600px;">实发合计</th>
+                        </tr>
+
+                        </thead>
+                        <tbody>
+                        <tr class="gradeU odd">
+                            <td class="">Other browsers</td>
+                            <td class="sorting_1">All others</td>
+                            <td class=" ">-</td>
+                            <td class="center ">-</td>
+                            <td class="center ">U</td>
+                            <td class=" ">-</td>
+
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+            <div id="tab-3" class="tab-pane">
                 <div class="panel-body">
-                    <strong>移动设备优先</strong>
-                    <p>在 Bootstrap 2 中，我们对框架中的某些关键部分增加了对移动设备友好的样式。而在 Bootstrap 3 中，我们重写了整个框架，使其一开始就是对移动设备友好的。这次不是简单的增加一些可选的针对移动设备的样式，而是直接融合进了框架的内核中。也就是说，Bootstrap 是移动设备优先的。针对移动设备的样式融合进了框架的每个角落，而不是增加一个额外的文件。</p>
+                    <strong></strong>
+                    <p>啊啊啊啊啊啊啊啊啊啊啊啊啊啊是简单的增加一些可选的针对移动设备的样式，而是直接融合进了框架的内核中。也就是说，Bootstrap 是移动设备优先的。针对移动设备的样式融合进了框架的每个角落，而不是增加一个额外的文件。</p>
                 </div>
             </div>
         </div>
@@ -146,6 +178,10 @@
         var oTable = $("#editable").dataTable();
     });
 </script>
+<script src="${pageContext.request.contextPath }/js/jquery.min.js?v=2.1.4"></script>
+<script src="${pageContext.request.contextPath }/js/bootstrap.min.js?v=3.3.5"></script>
+<script src="${pageContext.request.contextPath }/js/content.min.js?v=1.0.0"></script>
+<script type="text/javascript" src="${pageContext.request.contextPath }/js/award.js" charset="UTF-8"></script>
 <script type="text/javascript" src="${pageContext.request.contextPath }/js/stats.js" charset="UTF-8"></script>
 </body>
 </html>
