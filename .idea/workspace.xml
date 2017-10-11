@@ -1,133 +1,61 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-<<<<<<< HEAD
-    <list default="true" id="9bd4012a-0959-4e2c-a7b6-c77b1579e62a" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+    <list default="true" id="012f2ac2-66b6-4a37-9914-38c18215151e" name="Default" comment="">
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/webapp/img/login-background.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/webapp/img/p1.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/webapp/img/p2.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/webapp/img/p3.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/webapp/img/p_big1.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/webapp/img/p_big2.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/webapp/img/p_big3.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/webapp/img/profile.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/webapp/img/profile_big.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/webapp/img/wenku_logo.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/webapp/jsp/gaofei/test.jsp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/SLMemberStore/img/a1.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/SLMemberStore/img/a2.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/SLMemberStore/img/a3.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/SLMemberStore/img/a4.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/SLMemberStore/img/a6.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/SLMemberStore/img/a7.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/SLMemberStore/img/a8.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/SLMemberStore/img/a9.jpg" afterPath="" />
     </list>
-=======
-    <list default="true" id="74779f83-c725-4ef7-84a2-b62f11726b48" name="Default" comment="解决左侧列表图标字体异常_关键文件">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/index.jsp" afterPath="$PROJECT_DIR$/src/main/webapp/index.jsp" />
-    </list>
-    <ignored path="F:\ALL\北大青鸟 - 深圳信狮\Y2\结业项目\java\Y2项目\SL会员商城\SLMemberStore\.idea\shelf/" />
-    <ignored path="$PROJECT_DIR$/target/" />
-    <ignored path="D:\Download\SLMemberStore\.idea\shelf/" />
-    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
->>>>>>> 211f9dc65ea1d0fcceeb0b785fecad70729a2a06
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="DatabaseView">
+    <option name="SHOW_INTERMEDIATE" value="true" />
+    <option name="GROUP_SCHEMA" value="true" />
+    <option name="GROUP_CONTENTS" value="false" />
+    <option name="SORT_POSITIONED" value="false" />
+    <option name="SHOW_TABLE_DETAILS" value="true" />
+    <option name="SHOW_EMPTY_GROUPS" value="false" />
+    <option name="AUTO_SCROLL_FROM_SOURCE" value="false" />
+    <expand />
+    <select />
+  </component>
+  <component name="FavoritesManager">
+    <favorites_list name="SLMemberStore" />
+  </component>
   <component name="FileEditorManager">
-<<<<<<< HEAD
     <leaf />
-=======
-    <leaf>
-      <file leaf-file-name="awardpage.jsp" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/webapp/jsp/hubangzhen/awardpage.jsp">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="552">
-              <caret line="85" column="22" lean-forward="false" selection-start-line="85" selection-start-column="22" selection-end-line="85" selection-end-column="22" />
-              <folding>
-                <element signature="n#style#0;n#th#0;n#tr#0;n#thead#0;n#table#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#div#1;n#body#0;n#html#0;n#!!top" expanded="false" />
-                <element signature="n#style#0;n#div#0;n#form#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#small#0;n#div#0;n#form#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#input#0;n#div#2;n#form#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-    </leaf>
-  </component>
-  <component name="FileTemplateManagerImpl">
-    <option name="RECENT_TEMPLATES">
-      <list>
-        <option value="Jsp File" />
-      </list>
-    </option>
-  </component>
-  <component name="FindInProjectRecents">
-    <findStrings>
-      <find>tab_sys_fun</find>
-      <find>tab_Sys_Function</find>
-      <find>model</find>
-      <find>loginValidate</find>
-    </findStrings>
->>>>>>> 211f9dc65ea1d0fcceeb0b785fecad70729a2a06
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-<<<<<<< HEAD
-=======
-  <component name="GradleLocalSettings">
-    <option name="externalProjectsViewState">
-      <projects_view />
-    </option>
-  </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/main/java/com/accp/pojo/SysFunction.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/accp/dao/BasicInfoMapper.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/accp/dao/DataDictionaryMapper.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/accp/dao/MasterMapper.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/accp/dao/ShoppingMapper.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/accp/dao/ShoppingPacageMapper.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/accp/dao/SysFunctionMapper.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/accp/dao/SysMenuMapper.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/accp/dao/SysRoleFunctionMapper.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/accp/dao/SysRoleMenuMapper.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/accp/dao/UsersMapper.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/accp/pojo/Master.java" />
-        <option value="$PROJECT_DIR$/src/main/resources/mybatis-sqlmappers/MasterMapper.xml" />
-        <option value="$PROJECT_DIR$/src/main/resources/mybatis-sqlmappers/BasicInfoMapper.xml" />
-        <option value="$PROJECT_DIR$/src/main/resources/mybatis-sqlmappers/DataDictionaryMapper.xml" />
-        <option value="$PROJECT_DIR$/src/main/resources/mybatis-sqlmappers/ShoppingMapper.xml" />
-        <option value="$PROJECT_DIR$/src/main/resources/mybatis-sqlmappers/ShoppingPacageMapper.xml" />
-        <option value="$PROJECT_DIR$/src/main/resources/mybatis-sqlmappers/SysFunctionMapper.xml" />
-        <option value="$PROJECT_DIR$/src/main/resources/mybatis-sqlmappers/SysMenuMapper.xml" />
-        <option value="$PROJECT_DIR$/src/main/resources/mybatis-sqlmappers/SysRoleFunctionMapper.xml" />
-        <option value="$PROJECT_DIR$/src/main/resources/mybatis-sqlmappers/SysRoleMenuMapper.xml" />
-        <option value="$PROJECT_DIR$/src/main/resources/mybatis-sqlmappers/UsersMapper.xml" />
-        <option value="$PROJECT_DIR$/src/main/resources/mybatis-sqlmappers/AccountsOfConsumptionMapper.xml" />
-        <option value="$PROJECT_DIR$/src/main/resources/mybatis-sqlmappers/ApplyforlevelMapper.xml" />
-        <option value="$PROJECT_DIR$/src/main/resources/mybatis-sqlmappers/AreaMapper.xml" />
-        <option value="$PROJECT_DIR$/src/main/resources/mybatis-sqlmappers/BasicAccountMapper.xml" />
-        <option value="$PROJECT_DIR$/src/main/resources/mybatis-sqlmappers/ConsultMapper.xml" />
-        <option value="$PROJECT_DIR$/src/main/resources/mybatis-sqlmappers/DownloadcoreMapper.xml" />
-        <option value="$PROJECT_DIR$/src/main/resources/mybatis-sqlmappers/InternalTransferMapper.xml" />
-        <option value="$PROJECT_DIR$/src/main/resources/mybatis-sqlmappers/MessageMapper.xml" />
-        <option value="$PROJECT_DIR$/src/main/resources/mybatis-sqlmappers/MonthaccountMapper.xml" />
-        <option value="$PROJECT_DIR$/src/main/resources/mybatis-sqlmappers/NoticeMapper.xml" />
-        <option value="$PROJECT_DIR$/src/main/resources/mybatis-sqlmappers/OrderformdetailMapper.xml" />
-        <option value="$PROJECT_DIR$/src/main/resources/mybatis-sqlmappers/OrderformMapper.xml" />
-        <option value="$PROJECT_DIR$/src/main/resources/mybatis-sqlmappers/RemittanceMapper.xml" />
-        <option value="$PROJECT_DIR$/src/main/resources/mybatis-sqlmappers/ShippingaddressMapper.xml" />
-        <option value="$PROJECT_DIR$/src/main/resources/mybatis-sqlmappers/TaxationformMapper.xml" />
-        <option value="$PROJECT_DIR$/src/main/resources/mybatis-sqlmappers/TrophiesMapper.xml" />
-        <option value="$PROJECT_DIR$/src/main/resources/mybatis-sqlmappers/WithdrawDepositMapper.xml" />
-        <option value="$PROJECT_DIR$/src/main/webapp/login.jsp" />
-        <option value="$PROJECT_DIR$/.idea/workspace.xml" />
-        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" />
-        <option value="$PROJECT_DIR$/src/main/resources/springmvc-servlet.xml" />
-        <option value="$PROJECT_DIR$/src/main/webapp/css/style.min.css" />
-        <option value="$PROJECT_DIR$/src/main/webapp/js/plugins/slimscroll/jquery.slimscroll.min.js" />
-        <option value="$PROJECT_DIR$/src/main/webapp/js/plugins/layer/layer.min.js" />
-        <option value="$PROJECT_DIR$/src/main/webapp/js/contabs.min.js" />
-        <option value="$PROJECT_DIR$/src/main/webapp/js/plugins/pace/pace.min.js" />
-        <option value="$PROJECT_DIR$/src/main/webapp/backstage_infordemand/awardpage.jsp" />
-        <option value="$PROJECT_DIR$/src/main/webapp/index.jsp" />
         <option value="$PROJECT_DIR$/src/main/webapp/jsp/hubangzhen/awardpage.jsp" />
       </list>
     </option>
   </component>
->>>>>>> 211f9dc65ea1d0fcceeb0b785fecad70729a2a06
   <component name="JsBuildToolGruntFileManager" detection-done="true" sorting="DEFINITION_ORDER" />
   <component name="JsBuildToolPackageJson" detection-done="true" sorting="DEFINITION_ORDER" />
   <component name="JsGulpfileManager">
@@ -140,19 +68,6 @@
     <option name="FILTER_INFO" value="true" />
     <option name="FILTER_DEBUG" value="true" />
     <option name="CUSTOM_FILTER" />
-  </component>
-<<<<<<< HEAD
-  <component name="ProjectFrameBounds">
-    <option name="x" value="-8" />
-    <option name="y" value="-8" />
-    <option name="width" value="1936" />
-    <option name="height" value="1056" />
-=======
-  <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="-7" />
-    <option name="width" value="974" />
-    <option name="height" value="1047" />
->>>>>>> 211f9dc65ea1d0fcceeb0b785fecad70729a2a06
   </component>
   <component name="ProjectView">
     <navigator currentView="ProjectPane" proportions="" version="1">
@@ -169,7 +84,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="PackagesPane" />
+      <pane id="AndroidView" />
       <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
@@ -194,21 +109,6 @@
               <item name="SLMemberStore" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="SLMemberStore" type="b2602c69:ProjectViewProjectNode" />
-              <item name="SLMemberStore" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="accp" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="SLMemberStore" type="b2602c69:ProjectViewProjectNode" />
-              <item name="SLMemberStore" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="webapp" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -219,176 +119,14 @@
               <item name="webapp" type="462c0819:PsiDirectoryNode" />
               <item name="jsp" type="462c0819:PsiDirectoryNode" />
             </path>
-            <path>
-              <item name="SLMemberStore" type="b2602c69:ProjectViewProjectNode" />
-              <item name="SLMemberStore" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="webapp" type="462c0819:PsiDirectoryNode" />
-              <item name="jsp" type="462c0819:PsiDirectoryNode" />
-              <item name="hubangzhen" type="462c0819:PsiDirectoryNode" />
-            </path>
-<<<<<<< HEAD
-=======
-            <path>
-              <item name="SLMemberStore" type="b2602c69:ProjectViewProjectNode" />
-              <item name="SLMemberStore" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="webapp" type="462c0819:PsiDirectoryNode" />
-              <item name="jsp" type="462c0819:PsiDirectoryNode" />
-              <item name="zhangzheng" type="462c0819:PsiDirectoryNode" />
-            </path>
->>>>>>> 211f9dc65ea1d0fcceeb0b785fecad70729a2a06
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="AndroidView" />
       <pane id="Scope" />
+      <pane id="PackagesPane" />
     </panes>
   </component>
-<<<<<<< HEAD
-=======
-  <component name="PropertiesComponent">
-    <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="aspect.path.notification.shown" value="true" />
-    <property name="settings.editor.selected.configurable" value="preferences.sourceCode" />
-  </component>
-  <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="D:\Download\SLMemberStore\src\main\webapp\js" />
-      <recent name="D:\Download\SLMemberStore\src\main\webapp\img" />
-      <recent name="F:\ALL\北大青鸟 - 深圳信狮\Y2\结业项目\java\Y2项目\SL会员商城\SLMemberStore\src\main\webapp" />
-      <recent name="F:\ALL\北大青鸟 - 深圳信狮\Y2\结业项目\java\Y2项目\SL会员商城\SLMemberStore\src\main\webapp\fonts" />
-      <recent name="F:\ALL\北大青鸟 - 深圳信狮\Y2\结业项目\java\Y2项目\SL会员商城\SLMemberStore\src\main\webapp\css" />
-    </key>
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="D:\Download\SLMemberStore\src\main\webapp\jsp\hubangzhen" />
-      <recent name="F:\ALL\北大青鸟 - 深圳信狮\Y2\结业项目\java\Y2项目\SL会员商城\SLMemberStore\src\main\webapp\fonts" />
-    </key>
-  </component>
-  <component name="RestoreUpdateTree" date="Moments ago" ActionInfo="_Update">
-    <UpdatedFiles>
-      <FILE-GROUP>
-        <option name="myUpdateName" value="Updated from server" />
-        <option name="myStatusName" value="Changed on server" />
-        <option name="mySupportsDeletion" value="false" />
-        <option name="myCanBeAbsent" value="false" />
-        <option name="myId" value="CHANGED_ON_SERVER" />
-        <FILE-GROUP>
-          <option name="myUpdateName" value="Updated" />
-          <option name="myStatusName" value="Changed" />
-          <option name="mySupportsDeletion" value="false" />
-          <option name="myCanBeAbsent" value="false" />
-          <option name="myId" value="UPDATED" />
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/pom.xml</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/src/main/webapp/index.jsp</PATH>
-        </FILE-GROUP>
-        <FILE-GROUP>
-          <option name="myUpdateName" value="Created" />
-          <option name="myStatusName" value="Created" />
-          <option name="mySupportsDeletion" value="false" />
-          <option name="myCanBeAbsent" value="false" />
-          <option name="myId" value="CREATED" />
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/src/main/webapp/css/plugins/dataTables/dataTables.bootstrap.css</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/src/main/webapp/js/content.min.js</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/src/main/webapp/js/plugins/dataTables/dataTables.bootstrap.js</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/src/main/webapp/js/plugins/dataTables/jquery.dataTables.js</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/src/main/webapp/js/plugins/jeditable/jquery.jeditable.js</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/src/main/webapp/js/stats.js</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/src/main/webapp/jsp/zhangzheng/jurisdiction.jsp</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/src/main/webapp/jsp/zhangzheng/roleAdmin.jsp</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/src/main/webapp/jsp/zhangzheng/userAdmin.jsp</PATH>
-        </FILE-GROUP>
-        <FILE-GROUP>
-          <option name="myUpdateName" value="Deleted" />
-          <option name="myStatusName" value="Deleted" />
-          <option name="mySupportsDeletion" value="false" />
-          <option name="myCanBeAbsent" value="true" />
-          <option name="myId" value="REMOVED_FROM_REPOSITORY" />
-        </FILE-GROUP>
-        <FILE-GROUP>
-          <option name="myUpdateName" value="Restored" />
-          <option name="myStatusName" value="Will be restored" />
-          <option name="mySupportsDeletion" value="false" />
-          <option name="myCanBeAbsent" value="false" />
-          <option name="myId" value="RESTORED" />
-        </FILE-GROUP>
-      </FILE-GROUP>
-      <FILE-GROUP>
-        <option name="myUpdateName" value="Modified" />
-        <option name="myStatusName" value="Modified" />
-        <option name="mySupportsDeletion" value="false" />
-        <option name="myCanBeAbsent" value="false" />
-        <option name="myId" value="MODIFIED" />
-      </FILE-GROUP>
-      <FILE-GROUP>
-        <option name="myUpdateName" value="Skipped" />
-        <option name="myStatusName" value="Skipped" />
-        <option name="mySupportsDeletion" value="false" />
-        <option name="myCanBeAbsent" value="false" />
-        <option name="myId" value="SKIPPED" />
-      </FILE-GROUP>
-      <FILE-GROUP>
-        <option name="myUpdateName" value="Merged with conflicts" />
-        <option name="myStatusName" value="Will be merged with conflicts" />
-        <option name="mySupportsDeletion" value="false" />
-        <option name="myCanBeAbsent" value="false" />
-        <option name="myId" value="MERGED_WITH_CONFLICTS" />
-      </FILE-GROUP>
-      <FILE-GROUP>
-        <option name="myUpdateName" value="Merged with tree conflicts" />
-        <option name="myStatusName" value="Merged with tree conflicts" />
-        <option name="mySupportsDeletion" value="false" />
-        <option name="myCanBeAbsent" value="false" />
-        <option name="myId" value="MERGED_WITH_TREE_CONFLICT" />
-      </FILE-GROUP>
-      <FILE-GROUP>
-        <option name="myUpdateName" value="Merged with property conflicts" />
-        <option name="myStatusName" value="Will be merged with property conflicts" />
-        <option name="mySupportsDeletion" value="false" />
-        <option name="myCanBeAbsent" value="false" />
-        <option name="myId" value="MERGED_WITH_PROPERTY_CONFLICT" />
-      </FILE-GROUP>
-      <FILE-GROUP>
-        <option name="myUpdateName" value="Merged" />
-        <option name="myStatusName" value="Will be merged" />
-        <option name="mySupportsDeletion" value="false" />
-        <option name="myCanBeAbsent" value="false" />
-        <option name="myId" value="MERGED" />
-      </FILE-GROUP>
-      <FILE-GROUP>
-        <option name="myUpdateName" value="Not in repository" />
-        <option name="myStatusName" value="Not in repository" />
-        <option name="mySupportsDeletion" value="true" />
-        <option name="myCanBeAbsent" value="false" />
-        <option name="myId" value="UNKNOWN" />
-      </FILE-GROUP>
-      <FILE-GROUP>
-        <option name="myUpdateName" value="Locally added" />
-        <option name="myStatusName" value="Locally added" />
-        <option name="mySupportsDeletion" value="false" />
-        <option name="myCanBeAbsent" value="false" />
-        <option name="myId" value="LOCALLY_ADDED" />
-      </FILE-GROUP>
-      <FILE-GROUP>
-        <option name="myUpdateName" value="Locally removed" />
-        <option name="myStatusName" value="Locally removed" />
-        <option name="mySupportsDeletion" value="false" />
-        <option name="myCanBeAbsent" value="false" />
-        <option name="myId" value="LOCALLY_REMOVED" />
-      </FILE-GROUP>
-      <FILE-GROUP>
-        <option name="myUpdateName" value="Switched" />
-        <option name="myStatusName" value="Switched" />
-        <option name="mySupportsDeletion" value="false" />
-        <option name="myCanBeAbsent" value="false" />
-        <option name="myId" value="SWITCHED" />
-      </FILE-GROUP>
-    </UpdatedFiles>
-  </component>
->>>>>>> 211f9dc65ea1d0fcceeb0b785fecad70729a2a06
   <component name="RunDashboard">
     <option name="ruleStates">
       <list>
@@ -401,7 +139,82 @@
       </list>
     </option>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="Tomcat Server.T7">
+    <configuration name="T7" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" APPLICATION_SERVER_NAME="Tomcat 7.0.552" ALTERNATIVE_JRE_ENABLED="false">
+      <option name="BROWSER_ID" value="98ca6316-2f89-46d9-a9e5-fa9e2b0625b3" />
+      <option name="UPDATE_ON_FRAME_DEACTIVATION" value="true" />
+      <option name="UPDATE_CLASSES_ON_FRAME_DEACTIVATION" value="true" />
+      <option name="UPDATING_POLICY" value="restart-server" />
+      <deployment>
+        <artifact name="SLMemberStore:war exploded">
+          <settings>
+            <option name="CONTEXT_PATH" value="/SLMemberStore" />
+          </settings>
+        </artifact>
+      </deployment>
+      <server-settings>
+        <option name="BASE_DIRECTORY_NAME" value="Unnamed_SLMemberStore_2" />
+      </server-settings>
+      <predefined_log_file id="Tomcat" enabled="true" />
+      <predefined_log_file id="Tomcat Catalina" enabled="true" />
+      <predefined_log_file id="Tomcat Manager" enabled="false" />
+      <predefined_log_file id="Tomcat Host Manager" enabled="false" />
+      <predefined_log_file id="Tomcat Localhost Access" enabled="false" />
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <RunnerSettings RunnerId="Debug">
+        <option name="DEBUG_PORT" value="6245" />
+      </RunnerSettings>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Cover">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Debug">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Run">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <method>
+        <option name="BuildArtifacts" enabled="true">
+          <artifact name="SLMemberStore:war exploded" />
+        </option>
+      </method>
+    </configuration>
     <configuration default="true" type="Applet" factoryName="Applet">
       <option name="HTML_USED" value="false" />
       <option name="WIDTH" value="400" />
@@ -442,6 +255,68 @@
       </option>
       <envs />
       <patterns />
+    </configuration>
+    <configuration default="true" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" APPLICATION_SERVER_NAME="Tomcat 7.0.552" ALTERNATIVE_JRE_ENABLED="false">
+      <option name="BROWSER_ID" value="98ca6316-2f89-46d9-a9e5-fa9e2b0625b3" />
+      <option name="UPDATING_POLICY" value="restart-server" />
+      <deployment />
+      <server-settings>
+        <option name="BASE_DIRECTORY_NAME" value="_SLMemberStore" />
+      </server-settings>
+      <predefined_log_file id="Tomcat" enabled="true" />
+      <predefined_log_file id="Tomcat Catalina" enabled="true" />
+      <predefined_log_file id="Tomcat Manager" enabled="false" />
+      <predefined_log_file id="Tomcat Host Manager" enabled="false" />
+      <predefined_log_file id="Tomcat Localhost Access" enabled="false" />
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <RunnerSettings RunnerId="Debug">
+        <option name="DEBUG_PORT" value="6245" />
+      </RunnerSettings>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Cover">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Debug">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Run">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
     </configuration>
     <configuration default="true" type="#org.jetbrains.idea.devkit.run.PluginConfigurationType" factoryName="Plugin">
       <module name="" />
@@ -488,109 +363,17 @@
     <option name="remove_strategy" value="false" />
   </component>
   <component name="TaskManager">
-<<<<<<< HEAD
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="736000" />
+    <option name="totallyTimeSpent" value="343000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1616" height="876" extended-state="6" />
-=======
-    <task active="true" id="Default" summary="Default task">
-      <changelist id="74779f83-c725-4ef7-84a2-b62f11726b48" name="Default" comment="" />
-      <created>1507622741952</created>
-      <option name="number" value="Default" />
-      <option name="presentableId" value="Default" />
-      <updated>1507622741952</updated>
-      <workItem from="1507622755530" duration="12751000" />
-      <workItem from="1507645793311" duration="1074000" />
-      <workItem from="1507682937323" duration="5206000" />
-    </task>
-    <task id="LOCAL-00001" summary="和张正的合并">
-      <created>1507623597474</created>
-      <option name="number" value="00001" />
-      <option name="presentableId" value="LOCAL-00001" />
-      <option name="project" value="LOCAL" />
-      <updated>1507623597474</updated>
-    </task>
-    <task id="LOCAL-00002" summary="张正的实体类">
-      <created>1507624717305</created>
-      <option name="number" value="00002" />
-      <option name="presentableId" value="LOCAL-00002" />
-      <option name="project" value="LOCAL" />
-      <updated>1507624717305</updated>
-    </task>
-    <task id="LOCAL-00003" summary="重新get/set">
-      <created>1507626050991</created>
-      <option name="number" value="00003" />
-      <option name="presentableId" value="LOCAL-00003" />
-      <option name="project" value="LOCAL" />
-      <updated>1507626050991</updated>
-    </task>
-    <task id="LOCAL-00004" summary="修改包名，自动生成工具配置错了">
-      <created>1507626118756</created>
-      <option name="number" value="00004" />
-      <option name="presentableId" value="LOCAL-00004" />
-      <option name="project" value="LOCAL" />
-      <updated>1507626118756</updated>
-    </task>
-    <task id="LOCAL-00005" summary="张正的mapper/sql映射文件">
-      <created>1507626157146</created>
-      <option name="number" value="00005" />
-      <option name="presentableId" value="LOCAL-00005" />
-      <option name="project" value="LOCAL" />
-      <updated>1507626157146</updated>
-    </task>
-    <task id="LOCAL-00006" summary="张正的dao接口">
-      <created>1507626202503</created>
-      <option name="number" value="00006" />
-      <option name="presentableId" value="LOCAL-00006" />
-      <option name="project" value="LOCAL" />
-      <updated>1507626202503</updated>
-    </task>
-    <task id="LOCAL-00007" summary="前端素材和原型以及需求文档">
-      <created>1507626593111</created>
-      <option name="number" value="00007" />
-      <option name="presentableId" value="LOCAL-00007" />
-      <option name="project" value="LOCAL" />
-      <updated>1507626593111</updated>
-    </task>
-    <task id="LOCAL-00008" summary="把sql脚本移动到doc文件夹下了">
-      <created>1507626802490</created>
-      <option name="number" value="00008" />
-      <option name="presentableId" value="LOCAL-00008" />
-      <option name="project" value="LOCAL" />
-      <updated>1507626802490</updated>
-    </task>
-    <task id="LOCAL-00009" summary="解决图标异常">
-      <created>1507634066195</created>
-      <option name="number" value="00009" />
-      <option name="presentableId" value="LOCAL-00009" />
-      <option name="project" value="LOCAL" />
-      <updated>1507634066195</updated>
-    </task>
-    <task id="LOCAL-00010" summary="解决左侧列表图标字体异常_关键文件">
-      <created>1507634590713</created>
-      <option name="number" value="00010" />
-      <option name="presentableId" value="LOCAL-00010" />
-      <option name="project" value="LOCAL" />
-      <updated>1507634590713</updated>
-    </task>
-    <option name="localTasksCounter" value="11" />
-    <servers />
-  </component>
-  <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="23068000" />
-  </component>
-  <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1616" height="876" extended-state="6" />
-    <editor active="true" />
->>>>>>> 211f9dc65ea1d0fcceeb0b785fecad70729a2a06
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3297062" sideWeight="0.114072494" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3297062" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32884097" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
@@ -600,17 +383,18 @@
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32839838" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32884097" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Java Enterprise" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32839838" sideWeight="0.8859275" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.34724092" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32884097" sideWeight="0.8859275" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.30997303" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Spring" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.1651671" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Web" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
@@ -619,39 +403,31 @@
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
-<<<<<<< HEAD
-=======
-  <component name="TypeScriptGeneratedFilesManager">
-    <option name="version" value="1" />
-  </component>
-  <component name="VcsContentAnnotationSettings">
-    <option name="myLimit" value="2678400000" />
-  </component>
-  <component name="VcsManagerConfiguration">
-    <option name="LOCAL_CHANGES_DETAILS_PREVIEW_SHOWN" value="true" />
-    <MESSAGE value="和张正的合并" />
-    <MESSAGE value="张正的实体类" />
-    <MESSAGE value="重新get/set" />
-    <MESSAGE value="修改包名，自动生成工具配置错了" />
-    <MESSAGE value="张正的mapper/sql映射文件" />
-    <MESSAGE value="张正的dao接口" />
-    <MESSAGE value="前端素材和原型以及需求文档" />
-    <MESSAGE value="把sql脚本移动到doc文件夹下了" />
-    <MESSAGE value="解决图标异常" />
-    <MESSAGE value="解决左侧列表图标字体异常_关键文件" />
-    <option name="LAST_COMMIT_MESSAGE" value="解决左侧列表图标字体异常_关键文件" />
-  </component>
->>>>>>> 211f9dc65ea1d0fcceeb0b785fecad70729a2a06
   <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <option name="time" value="3" />
-    </breakpoint-manager>
+    <breakpoint-manager />
     <watches-manager />
   </component>
+  <component name="antWorkspaceConfiguration">
+    <option name="IS_AUTOSCROLL_TO_SOURCE" value="false" />
+    <option name="FILTER_TARGETS" value="false" />
+  </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/src/main/resources/mybatis-sqlmappers/ShippingaddressMapper.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="324">
+          <caret line="12" column="29" lean-forward="true" selection-start-line="12" selection-start-column="29" selection-end-line="12" selection-end-column="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/mybatis-sqlmappers/ShoppingMapper.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="266">
+          <caret line="11" column="70" lean-forward="true" selection-start-line="11" selection-start-column="70" selection-end-line="11" selection-end-column="70" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/resources/mybatis-sqlmappers/ShoppingPacageMapper.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="239">
@@ -872,7 +648,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://D:/OA系统/idea.maven/OASystem/src/main/webapp/index.jsp" />
+    <entry file="file://$USER_HOME$/OA系统/idea.maven/OASystem/src/main/webapp/index.jsp" />
     <entry file="file://$PROJECT_DIR$/src/main/webapp/fonts/fontawesome-webfont.svg">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="351">
@@ -895,109 +671,56 @@
     <entry file="file://$USER_HOME$/Documents/My WebZIP Sites/demo_admui(0)/demo.admui.com/demo.admui.html" />
     <entry file="file://$USER_HOME$/Documents/My WebZIP Sites/demo_admui/demo.admui.com/components/layouts/grids.html" />
     <entry file="file://$USER_HOME$/Documents/My WebZIP Sites/demo_admui/demo.admui.com/forms/image-cropping.html" />
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/index.jsp">
+    <entry file="file://$PROJECT_DIR$/../doc-SLMemberStore/前端素材/后台模板/总体/花了money的高级后台管理模板/table_basic.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="72">
-          <caret line="129" column="56" lean-forward="true" selection-start-line="129" selection-start-column="56" selection-end-line="129" selection-end-column="56" />
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="397" selection-end-column="7" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://F:/前端素材/后台模板/总体/花了money的高级后台管理模板/table_basic.html">
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/jsp/gaofei/test.jsp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="8580">
-          <caret line="390" column="53" lean-forward="true" selection-start-line="385" selection-start-column="4" selection-end-line="390" selection-end-column="53" />
+        <state relative-caret-position="250">
+          <caret line="10" column="16" lean-forward="false" selection-start-line="10" selection-start-column="11" selection-end-line="10" selection-end-column="16" />
           <folding />
         </state>
       </provider>
     </entry>
-<<<<<<< HEAD
-    <entry file="file://$PROJECT_DIR$/.idea/workspace.xml">
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/test.jsp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="666">
-          <caret line="772" column="16" lean-forward="true" selection-start-line="772" selection-start-column="16" selection-end-line="772" selection-end-column="16" />
-=======
-    <entry file="file://F:/前端素材/后台模板/总体/花了money的高级后台管理模板/table_data_tables.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="506">
-          <caret line="950" column="103" lean-forward="true" selection-start-line="941" selection-start-column="4" selection-end-line="950" selection-end-column="103" />
-          <folding>
-            <element signature="n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/js/stats.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="242">
-          <caret line="11" column="20" lean-forward="true" selection-start-line="11" selection-start-column="20" selection-end-line="11" selection-end-column="20" />
->>>>>>> 211f9dc65ea1d0fcceeb0b785fecad70729a2a06
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/jsp/zhangzheng/jurisdiction.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-<<<<<<< HEAD
         <state relative-caret-position="-4400">
           <caret line="46" column="28" lean-forward="true" selection-start-line="0" selection-start-column="0" selection-end-line="393" selection-end-column="7" />
-=======
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
->>>>>>> 211f9dc65ea1d0fcceeb0b785fecad70729a2a06
           <folding />
         </state>
       </provider>
     </entry>
-<<<<<<< HEAD
     <entry file="file://$PROJECT_DIR$/src/main/webapp/index.jsp">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1892">
           <caret line="277" column="45" lean-forward="false" selection-start-line="277" selection-start-column="45" selection-end-line="277" selection-end-column="45" />
           <folding>
-            <marker date="1507690407888" expanded="false" signature="7904:7920" ph="..." />
-            <marker date="1507690407888" expanded="false" signature="10201:10207" ph="©" />
-=======
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/jsp/zhangzheng/roleAdmin.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
+            <marker date="1507693472467" expanded="false" signature="7953:7969" ph="..." />
+            <marker date="1507693472467" expanded="false" signature="10250:10256" ph="©" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/webapp/jsp/hubangzhen/awardpage.jsp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="552">
-          <caret line="85" column="22" lean-forward="false" selection-start-line="85" selection-start-column="22" selection-end-line="85" selection-end-column="22" />
-          <folding>
-            <element signature="n#style#0;n#th#0;n#tr#0;n#thead#0;n#table#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#div#1;n#body#0;n#html#0;n#!!top" expanded="false" />
-            <element signature="n#style#0;n#div#0;n#form#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#small#0;n#div#0;n#form#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#input#0;n#div#2;n#form#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
->>>>>>> 211f9dc65ea1d0fcceeb0b785fecad70729a2a06
-          </folding>
+        <state relative-caret-position="400">
+          <caret line="34" column="16" lean-forward="false" selection-start-line="34" selection-start-column="16" selection-end-line="34" selection-end-column="225" />
+          <folding />
         </state>
       </provider>
     </entry>
-<<<<<<< HEAD
-=======
-  </component>
-  <component name="masterDetails">
-    <states>
-      <state key="ScopeChooserConfigurable.UI">
-        <settings>
-          <splitter-proportions>
-            <option name="proportions">
-              <list>
-                <option value="0.2" />
-              </list>
-            </option>
-          </splitter-proportions>
-        </settings>
-      </state>
-    </states>
->>>>>>> 211f9dc65ea1d0fcceeb0b785fecad70729a2a06
+    <entry file="file://$PROJECT_DIR$/.idea/workspace.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="25">
+          <caret line="3" column="12" lean-forward="true" selection-start-line="3" selection-start-column="12" selection-end-line="3" selection-end-column="12" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
   </component>
 </project>
