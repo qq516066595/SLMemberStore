@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.accp.dao.BasicAccountMapper">
+  <resultMap id="BaseResultMap" type="com.accp.pojo.BasicAccount">
+    <result column="b_date" jdbcType="TIMESTAMP" property="bDate" />
+    <result column="b_abstract" jdbcType="VARCHAR" property="bAbstract" />
+    <result column="b_entry" jdbcType="REAL" property="bEntry" />
+    <result column="b_Charge Off" jdbcType="REAL" property="bChargeOff" />
+    <result column="b_balance" jdbcType="REAL" property="bBalance" />
+  </resultMap>
+  <insert id="insert" parameterType="com.accp.pojo.BasicAccount">
+    insert into tab_basic_account (b_date, b_abstract, b_entry, 
+      "b_Charge Off", b_balance)
+    values (#{bDate,jdbcType=TIMESTAMP}, #{bAbstract,jdbcType=VARCHAR}, #{bEntry,jdbcType=REAL}, 
+      #{bChargeOff,jdbcType=REAL}, #{bBalance,jdbcType=REAL})
+  </insert>
+  <insert id="insertSelective" parameterType="com.accp.pojo.BasicAccount">
+    insert into tab_basic_account
+    <trim prefix="(" suffix=")" suffixOverrides=",">
+      <if test="bDate != null">
+        b_date,
+      </if>
+      <if test="bAbstract != null">
+        b_abstract,
+      </if>
+      <if test="bEntry != null">
+        b_entry,
+      </if>
+      <if test="bChargeOff != null">
+        "b_Charge Off",
+      </if>
+      <if test="bBalance != null">
+        b_balance,
+      </if>
+    </trim>
+    <trim prefix="values (" suffix=")" suffixOverrides=",">
+      <if test="bDate != null">
+        #{bDate,jdbcType=TIMESTAMP},
+      </if>
+      <if test="bAbstract != null">
+        #{bAbstract,jdbcType=VARCHAR},
+      </if>
+      <if test="bEntry != null">
+        #{bEntry,jdbcType=REAL},
+      </if>
+      <if test="bChargeOff != null">
+        #{bChargeOff,jdbcType=REAL},
+      </if>
+      <if test="bBalance != null">
+        #{bBalance,jdbcType=REAL},
+      </if>
+    </trim>
+  </insert>
+</mapper>

@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.accp.dao.BasicInfoMapper">
+  <resultMap id="BaseResultMap" type="com.accp.pojo.BasicInfo">
+    <result column="p_Code" jdbcType="VARCHAR" property="pCode" />
+    <result column="p_Name" jdbcType="VARCHAR" property="pName" />
+    <result column="p_Value" jdbcType="VARCHAR" property="pValue" />
+    <result column="p_Desc" jdbcType="VARCHAR" property="pDesc" />
+  </resultMap>
+  <insert id="insert" parameterType="com.accp.pojo.BasicInfo">
+    insert into tab_basic_info (p_Code, p_Name, p_Value, 
+      p_Desc)
+    values (#{pCode,jdbcType=VARCHAR}, #{pName,jdbcType=VARCHAR}, #{pValue,jdbcType=VARCHAR}, 
+      #{pDesc,jdbcType=VARCHAR})
+  </insert>
+  <insert id="insertSelective" parameterType="com.accp.pojo.BasicInfo">
+    insert into tab_basic_info
+    <trim prefix="(" suffix=")" suffixOverrides=",">
+      <if test="pCode != null">
+        p_Code,
+      </if>
+      <if test="pName != null">
+        p_Name,
+      </if>
+      <if test="pValue != null">
+        p_Value,
+      </if>
+      <if test="pDesc != null">
+        p_Desc,
+      </if>
+    </trim>
+    <trim prefix="values (" suffix=")" suffixOverrides=",">
+      <if test="pCode != null">
+        #{pCode,jdbcType=VARCHAR},
+      </if>
+      <if test="pName != null">
+        #{pName,jdbcType=VARCHAR},
+      </if>
+      <if test="pValue != null">
+        #{pValue,jdbcType=VARCHAR},
+      </if>
+      <if test="pDesc != null">
+        #{pDesc,jdbcType=VARCHAR},
+      </if>
+    </trim>
+  </insert>
+</mapper>
